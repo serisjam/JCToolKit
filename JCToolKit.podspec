@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'JCToolKit'
   s.version          = '0.1.0'
-  s.summary          = 'JCToolKit快速开发框架是用于快速高效开发的工具库'
+  s.summary          = 'JCToolKit快速开发框架'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,8 +21,7 @@ Pod::Spec.new do |s|
                         JCToolKit快速开发框架是用于快速高效开发的工具库
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/JCToolKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/SerilesJam/JCToolKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'JiaMiao' => 'hxjiamiao@126.com' }
   s.source           = { :git => 'https://github.com/SerilesJam/JCToolKit.git', :tag => s.version.to_s }
