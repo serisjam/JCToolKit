@@ -1,6 +1,6 @@
 # JCToolKit
 
-[![CI Status](http://img.shields.io/travis/贾淼/JCToolKit.svg?style=flat)](https://travis-ci.org/贾淼/JCToolKit)
+[![CI Status](http://img.shields.io/travis/JiaMiao/JCToolKit.svg?style=flat)](https://travis-ci.org/JiaMiao/JCToolKit)
 [![Version](https://img.shields.io/cocoapods/v/JCToolKit.svg?style=flat)](http://cocoapods.org/pods/JCToolKit)
 [![License](https://img.shields.io/cocoapods/l/JCToolKit.svg?style=flat)](http://cocoapods.org/pods/JCToolKit)
 [![Platform](https://img.shields.io/cocoapods/p/JCToolKit.svg?style=flat)](http://cocoapods.org/pods/JCToolKit)
@@ -22,8 +22,12 @@ pod "JCToolKit"
 
 ## Author
 
-贾淼, suzhou136@nahuasuan.com
+JiaMiao, hxjiamiao@126.com
 
 ## License
 
 JCToolKit is available under the MIT license. See the LICENSE file for more info.
+
+## JCToolKit
+
+JCToolKit快速开发框架是用于快速高效开发的工具库.
