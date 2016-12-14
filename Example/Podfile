@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JCToolKit_Example' do
+  pod 'JCToolKit', :path => '../'
+
+  target 'JCToolKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
