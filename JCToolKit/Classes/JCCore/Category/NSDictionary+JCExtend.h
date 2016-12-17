@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (ExtraMethod)
+@interface NSDictionary (JCExtend)
 
-- (id)objectSafetyForKey:(NSString *)key;
+- (id)jc_objectSafetyForKey:(NSString *)key;
 
 @end

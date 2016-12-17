@@ -6,11 +6,11 @@
 //  Copyright © 2015年 Jam. All rights reserved.
 //
 
-#import "NSDictionary+ExtraMethod.h"
+#import "NSDictionary+JCExtend.h"
 
-@implementation NSDictionary (ExtraMethod)
+@implementation NSDictionary (JCExtend)
 
-- (id)objectSafetyForKey:(NSString *)key {
+- (id)jc_objectSafetyForKey:(NSString *)key {
     if ([[self objectForKey:key] isKindOfClass:[NSNull class]]) {
         return nil;
     } else if ([[self objectForKey:key] isKindOfClass:[NSString class]]) {

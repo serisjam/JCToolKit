@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (ExtraMethod)
+@interface NSArray (JCExtend)
 
-- (id)objectSafetyAtIndex:(NSUInteger)index;
+- (id)jc_objectSafetyAtIndex:(NSUInteger)index;
 
 @end

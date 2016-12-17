@@ -6,11 +6,11 @@
 //  Copyright (c) 2013年 jiamiao. All rights reserved.
 //
 
-#import "NSArray+ExtraMethod.h"
+#import "NSArray+JCExtend.h"
 
-@implementation NSArray (ExtraMethod)
+@implementation NSArray (JCExtend)
 
-- (id)objectSafetyAtIndex:(NSUInteger)index
+- (id)jc_objectSafetyAtIndex:(NSUInteger)index
 {
     if (index >= [self count]) {
         return nil;

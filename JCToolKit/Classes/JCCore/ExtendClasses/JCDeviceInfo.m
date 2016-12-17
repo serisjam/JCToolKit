@@ -7,7 +7,7 @@
 //
 
 #import "JCDeviceInfo.h"
-#import "SSKeychain.h"
+#import "SAMKeychain.h"
 
 #import <ifaddrs.h>
 #import <arpa/inet.h>
@@ -68,15 +68,97 @@
 }
 
 + (NSString *)getIMEI{
-    NSString *retrieveuuid = [SSKeychain passwordForService:@"com.nahuasuan.nahuasuan" account:@"uuid"];
+    NSString *retrieveuuid = [SAMKeychain passwordForService:[self getBundleIdentifier] account:@"uuid"];
     if (retrieveuuid == nil || [retrieveuuid isEqualToString:@""]){
         CFUUIDRef uuid = CFUUIDCreate(NULL);
         assert(uuid != NULL);
         CFStringRef uuidStr = CFUUIDCreateString(NULL, uuid);
         retrieveuuid = [NSString stringWithFormat:@"%@", uuidStr];
-        [SSKeychain setPassword: retrieveuuid forService:@"com.nahuasuan.nahuasuan" account:@"uuid"];
+        [SAMKeychain setPassword: retrieveuuid forService:[self getBundleIdentifier] account:@"uuid"];
     }
     return retrieveuuid;
+}
+
++ (NSString *)getBundleVersion {
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+}
+
++ (NSString *)getBundleVersionWithNoDot {
+    NSDictionary *infoDict=[[NSBundle mainBundle] infoDictionary];
+    NSString *sVersion=[infoDict objectForKey:@"CFBundleShortVersionString"];
+    
+    NSRange fRange = [sVersion rangeOfString:@"."];
+    
+    
+    NSString * version = @"";
+    
+    if(fRange.location != NSNotFound){
+        sVersion = [sVersion stringByReplacingOccurrencesOfString:@"." withString:@""];
+        NSMutableString *mVersion = [NSMutableString stringWithString:sVersion];
+        [mVersion insertString:@"." atIndex:fRange.location];
+        version = mVersion;
+    }else {
+        // 版本应该有问题(由于ios 的版本 是7.0.1，没有发现出现过没有小数点的情况)
+        version = sVersion;
+    }
+    NSString * newversion =[NSString stringWithFormat:@"%.0f",[version floatValue]*100];
+    
+    return newversion;
+}
+
++ (NSString *)getBundleShortVersion {
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+}
+
++ (NSString *)getBundleIdentifier {
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
+}
+
++ (NSString *)getIPAddress {
+    NSString *address = @"error";
+    struct ifaddrs *interfaces = NULL;
+    struct ifaddrs *temp_addr = NULL;
+    int success = 0;
+    success = getifaddrs(&interfaces);
+    if (success == 0) {
+        temp_addr = interfaces;
+        while(temp_addr != NULL) {
+            if(temp_addr->ifa_addr->sa_family == AF_INET) {
+                if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
+                    address = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
+                }
+            }
+            temp_addr = temp_addr->ifa_next;
+        }
+    }
+    freeifaddrs(interfaces);
+    return address;
+}
+
++ (UIDeviceOrientation)getCurrentOrientation {
+    return [[UIDevice currentDevice] orientation];
+}
+
++ (CGFloat)getCurrentBatteryLevel{
+    CGFloat currentBatteryLevel = [[UIDevice currentDevice]batteryLevel];
+    return currentBatteryLevel;
+}
+
++ (UIUserInterfaceIdiom)currentUserInterfaceIdiom{
+    return [[UIDevice currentDevice]userInterfaceIdiom];
+}
+
++ (NSString *)getScreenSize {
+    //屏幕尺寸
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    CGSize size = rect.size;
+    CGFloat width = size.width;
+    CGFloat height = size.height;
+    
+    //分辨率
+    CGFloat scale_screen = [UIScreen mainScreen].scale;
+    NSString *screenSize = [NSString stringWithFormat:@"%f*%f", width*scale_screen, height*scale_screen];
+    return screenSize;
 }
 
 @end

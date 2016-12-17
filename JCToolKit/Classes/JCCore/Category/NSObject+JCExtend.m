@@ -6,10 +6,10 @@
 //  Copyright © 2015年 nahuasuan. All rights reserved.
 //
 
-#import "NSObject+JCAssociated.h"
+#import "NSObject+JCExtend.h"
 #import <objc/runtime.h>
 
-@implementation NSObject (JCAssociated)
+@implementation NSObject (JCExtend)
 
 - (id)jc_getAssociatedObjectForKey:(const char *)key {
     const char * propName = key;

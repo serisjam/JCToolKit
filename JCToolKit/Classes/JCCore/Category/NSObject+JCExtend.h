@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (JCAssociated)
+@interface NSObject (JCExtend)
 
 - (id)jc_getAssociatedObjectForKey:(const char *)key;
 - (id)jc_retainAssociatedObject:(id)obj forKey:(const char *)key;

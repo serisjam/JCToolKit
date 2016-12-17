@@ -44,6 +44,6 @@ Pod::Spec.new do |s|
   s.dependency 'AFNetworking'
   s.dependency 'YYModel'
   s.dependency 'YYCache'
-  s.dependency 'SSKeychain'
+  s.dependency 'SAMKeychain'
 
 end
