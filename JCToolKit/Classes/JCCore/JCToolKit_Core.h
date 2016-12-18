@@ -25,6 +25,7 @@
 #import "NSArray+JCExtend.h"
 #import "NSDictionary+JCExtend.h"
 
+#import "NSObject+JCAOP.h"
 #import "JCDeviceInfo.h"
 
 #endif /* JCToolKit_Core_h */
