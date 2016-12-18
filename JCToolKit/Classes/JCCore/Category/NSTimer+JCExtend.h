@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define getCurentTime [[NSDate date] timeIntervalSince1970]
-
 @interface NSTimer (JCExtend)
 
++ (NSTimer *)jc_scheduledTimerWithTimeInterval:(NSTimeInterval)seconds block:(void (^)(NSTimer *timer))block repeats:(BOOL)repeats;
 + (NSTimer *)jc_timerWithTimeInterval:(NSTimeInterval)seconds block:(void (^)(NSTimer *timer))block repeats:(BOOL)repeats;
 
 - (void)jc_pauseTimer;

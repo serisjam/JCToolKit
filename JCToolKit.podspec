@@ -36,11 +36,14 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'JCToolKit/Classes/JCCore/**/*.h'
   end
 
-  # s.resource_bundles = {
-  #   'JCToolKit' => ['JCToolKit/Assets/*.png']
-  # }
+  s.subspec 'JCUI' do |ss|
+    ss.source_files = 'JCToolKit/Classes/JCUI/**/*'
+    ss.public_header_files = 'JCToolKit/Classes/JCUI/**/*.h'
 
-  s.frameworks = 'UIKit', 'ImageIO', 'Security', 'CFNetwork', 'SystemConfiguration', 'Security'
+    ss.dependency 'JCToolKit/JCCore'
+  end
+
+  s.frameworks = 'UIKit', 'ImageIO', 'Security', 'CFNetwork', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreImage'
   s.dependency 'AFNetworking'
   s.dependency 'YYModel'
   s.dependency 'YYCache'

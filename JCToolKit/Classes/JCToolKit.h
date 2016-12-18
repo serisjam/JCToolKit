@@ -10,5 +10,6 @@
 #define JCToolKit_h
 
 #import "JCToolKit_Core.h"
+#import "JCToolKit_UI.h"
 
 #endif /* JCToolKit_h */

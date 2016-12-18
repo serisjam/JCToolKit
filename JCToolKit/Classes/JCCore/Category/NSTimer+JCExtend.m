@@ -17,12 +17,15 @@
     }
 }
 
++ (NSTimer *)jc_scheduledTimerWithTimeInterval:(NSTimeInterval)seconds block:(void (^)(NSTimer *timer))block repeats:(BOOL)repeats {
+    return [NSTimer scheduledTimerWithTimeInterval:seconds target:self selector:@selector(jc_execBlock:) userInfo:[block copy] repeats:repeats];
+}
+
 + (NSTimer *)jc_timerWithTimeInterval:(NSTimeInterval)seconds block:(void (^)(NSTimer *timer))block repeats:(BOOL)repeats {
     return [NSTimer timerWithTimeInterval:seconds target:self selector:@selector(jc_execBlock:) userInfo:[block copy] repeats:repeats];
 }
 
-- (void)jc_pauseTimer
-{
+- (void)jc_pauseTimer {
     if (![self isValid]) {
         return ;
     }
