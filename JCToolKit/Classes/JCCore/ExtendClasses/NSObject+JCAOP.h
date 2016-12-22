@@ -16,6 +16,6 @@ typedef NS_ENUM(NSUInteger, JCAOPExecuteOptions) {
 
 @interface NSObject (JCAOP)
 
-+ (void)jc_hookSelector:(SEL)selector withExcuteOption:(JCAOPExecuteOptions)options usingBlock:(id)block;
+- (void)jc_hookSelector:(SEL)selector withExcuteOption:(JCAOPExecuteOptions)options usingBlock:(id)block;
 
 @end
