@@ -11,5 +11,6 @@
 
 #import "UIImage+JCExtend.h"
 #import "UIControl+JCExtend.h"
+#import "UITabBarItem+JCExtend.h"
 
 #endif /* JCToolKit_UI_h */
