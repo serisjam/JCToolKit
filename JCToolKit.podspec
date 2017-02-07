@@ -32,8 +32,20 @@ Pod::Spec.new do |s|
   s.public_header_files = 'JCToolKit/Classes/JCToolKit.h'
 
   s.subspec 'JCCore' do |ss|
-    ss.source_files = 'JCToolKit/Classes/JCCore/**/*'
-    ss.public_header_files = 'JCToolKit/Classes/JCCore/**/*.h'
+
+    ss.source_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
+    ss.public_header_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
+
+    ss.subspec 'Category' do |sss|
+        sss.source_files = 'JCToolKit/Classes/JCCore/Category/*'
+        sss.public_header_files = 'JCToolKit/Classes/JCCore/Category/*.h'
+    end
+
+    ss.subspec 'ExtendClasses' do |sss|
+        sss.source_files = 'JCToolKit/Classes/JCCore/ExtendClasses/*'
+        sss.public_header_files = 'JCToolKit/Classes/JCCore/ExtendClasses/*.h'
+    end
+
   end
 
   s.subspec 'JCUI' do |ss|

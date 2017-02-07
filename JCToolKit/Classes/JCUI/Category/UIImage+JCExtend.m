@@ -195,7 +195,7 @@ static void jc_addRoundedRectToPath(CGContextRef context, CGRect rect, float rad
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
+
     return image;
 }
 

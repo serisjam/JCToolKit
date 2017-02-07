@@ -96,13 +96,12 @@ static void jc_hook_forwardInvocation(__unsafe_unretained NSObject *self, SEL se
 static NSString *const JCSubClassPrefix = @"_JC_";
 
 static Class jc_hookClass(NSObject *self, NSError **error) {
-    
     Class statedClass = self.class;
     Class baseClass = object_getClass(self);
     NSString *className = NSStringFromClass(baseClass);
     
     if ([className hasPrefix:JCSubClassPrefix]) {
-        
+        return baseClass;
     } else if (class_isMetaClass(baseClass)) {
         IMP originalImplementation = class_replaceMethod(self, @selector(forwardInvocation:), (IMP)jc_hook_forwardInvocation, "v@:@");
         class_addMethod(self, NSSelectorFromString(@"jc_hook_forwardInvocation:"), originalImplementation, "v@:@");
@@ -129,7 +128,6 @@ static Class jc_hookClass(NSObject *self, NSError **error) {
         jc_hookedGetClass(object_getClass(subclass), statedClass);
         objc_registerClassPair(subclass);
     }
-    
     object_setClass(self, subclass);
     return subclass;
 }
@@ -141,7 +139,6 @@ static Class jc_hookClass(NSObject *self, NSError **error) {
     NSParameterAssert(block);
     
     NSMethodSignature *blockSignature = jc_signatureForBlock(block);
-    
     Class jcClass = jc_hookClass(self, nil);
     
     Method targetMethod = class_getInstanceMethod(jcClass, selector);
