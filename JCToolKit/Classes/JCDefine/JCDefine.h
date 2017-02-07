@@ -18,11 +18,11 @@
 #define jc_strongSelf __strong typeof(self) selfStrong = selfWeak;
 
 //单例类
-#define jc_singleton(className) \
+#define jc_singleton \
 + (instancetype)sharedInstance;
 
 #define jc_singleton_implementation(className)  \
-+ (className *)sharedInstance { \
++ (instancetype)sharedInstance { \
     static className *shared##className = nil; \
     static dispatch_once_t onceToken; \
     dispatch_once(&onceToken, ^{ \
