@@ -21,14 +21,14 @@
 #define jc_singleton \
 + (instancetype)sharedInstance;
 
-#define jc_singleton_implementation(className)  \
+#define jc_singleton_implementation  \
+static id _instance; \
 + (instancetype)sharedInstance { \
-    static className *shared##className = nil; \
     static dispatch_once_t onceToken; \
     dispatch_once(&onceToken, ^{ \
-        shared##className = [[self alloc] init]; \
+        _instance = [[self alloc] init]; \
     }); \
-    return shared##className; \
+    return _instance; \
 }
 
 @interface JCDefine : NSObject
