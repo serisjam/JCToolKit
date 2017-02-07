@@ -31,6 +31,11 @@ Pod::Spec.new do |s|
   s.source_files = 'JCToolKit/Classes/*'
   s.public_header_files = 'JCToolKit/Classes/JCToolKit.h'
 
+  s.subspec 'JCDefine' do |ss|
+    ss.source_files = 'JCToolKit/Classes/JCDefine/*'
+    ss.public_header_files = 'JCToolKit/Classes/JCDefine/*.h'
+  end
+
   s.subspec 'JCCore' do |ss|
 
     ss.source_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
@@ -45,7 +50,7 @@ Pod::Spec.new do |s|
         sss.source_files = 'JCToolKit/Classes/JCCore/ExtendClasses/*'
         sss.public_header_files = 'JCToolKit/Classes/JCCore/ExtendClasses/*.h'
     end
-
+    ss.dependency 'JCToolKit/JCDefine'
   end
 
   s.subspec 'JCUI' do |ss|
@@ -65,10 +70,7 @@ Pod::Spec.new do |s|
     ss.dependency 'JCToolKit/JCCore'
   end
 
-  s.frameworks = 'UIKit', 'ImageIO', 'Security', 'CFNetwork', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreImage'
-  s.dependency 'AFNetworking'
-  s.dependency 'YYModel'
-  s.dependency 'YYCache'
+  s.frameworks = 'UIKit', 'ImageIO', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreImage'
   s.dependency 'SAMKeychain'
 
 end

@@ -9,6 +9,7 @@
 #ifndef JCToolKit_h
 #define JCToolKit_h
 
+#import "JCDefine.h"
 #import "JCToolKit_Core.h"
 #import "JCToolKit_UI.h"
 
