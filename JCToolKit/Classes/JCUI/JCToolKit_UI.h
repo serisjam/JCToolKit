@@ -9,7 +9,6 @@
 #ifndef JCToolKit_UI_h
 #define JCToolKit_UI_h
 
-#import "UIView+JCExtend.h"
 #import "UIImage+JCExtend.h"
 #import "UIControl+JCExtend.h"
 #import "UITabBarItem+JCExtend.h"
