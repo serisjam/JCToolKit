@@ -2,7 +2,7 @@
 //  UITabBarItem+JCExtend.m
 //  Pods
 //
-//  Created by 贾淼 on 17/2/7.
+//  Created by Jam on 17/2/7.
 //
 //
 

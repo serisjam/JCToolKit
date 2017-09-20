@@ -2,7 +2,7 @@
 //  JCToolKit.h
 //  Pods
 //
-//  Created by 贾淼 on 16/12/14.
+//  Created by Jam on 16/12/14.
 //
 //
 

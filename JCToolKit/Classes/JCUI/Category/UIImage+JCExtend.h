@@ -2,7 +2,7 @@
 //  UIImage+JCExtend.h
 //  Pods
 //
-//  Created by 唐 on 16/12/18.
+//  Created by Jam on 16/12/18.
 //
 //
 
