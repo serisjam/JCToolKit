@@ -7,24 +7,33 @@
 //
 
 #import "JCViewController.h"
-
 #import <JCToolKit/JCToolKit.h>
 
-@interface JCViewController ()
+@interface JCViewController () < CALayerDelegate >
+
+@property (nonatomic, strong) NSString *target;
 
 @end
 
 @implementation JCViewController
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
++ (void)load
+{
+	[JCViewController jc_hookSelector:@selector(viewWillAppear:) withExcuteOption:JCAOPExecuteOptionBefore usingBlock:^(JCAOPInfo *aopInfo) {
+		NSLog(@"Befor View Controller %@ arguments: %@", aopInfo.instance, aopInfo.arguments);
+	}];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
     self = [super initWithCoder:aDecoder];
     
     if (self) {
-        [self jc_hookSelector:@selector(viewWillAppear:) withExcuteOption:JCAOPExecuteOptionAfter usingBlock:^{
-            NSLog(@"test");
-        }];
+		[self jc_hookSelector:@selector(viewWillAppear:) withExcuteOption:JCAOPExecuteOptionAfter usingBlock:^(JCAOPInfo *aopInfo) {
+			NSLog(@"After View Controller %@ arguments: %@", aopInfo.instance, aopInfo.arguments);
+		}];
     }
-    
+	
     return self;
 }
 
@@ -34,8 +43,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
     [super viewWillAppear:animated];
+	
+	NSLog(@"viewwillappear");
 }
 
 - (void)didReceiveMemoryWarning
