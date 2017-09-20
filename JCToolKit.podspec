@@ -72,6 +72,5 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'UIKit', 'ImageIO', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreImage'
   s.dependency 'SAMKeychain'
-  s.dependency 'Aspects'
 
 end
