@@ -2,7 +2,7 @@
 //  JCDefine.h
 //  Pods
 //
-//  Created by 贾淼 on 17/2/7.
+//  Created by Jam on 17/2/7.
 //
 //
 
@@ -29,6 +29,18 @@ static id _instance; \
         _instance = [[self alloc] init]; \
     }); \
     return _instance; \
+}
+
+#define jc_perfomeLock_implementation \
+static void jc_performLock(dispatch_block_t block) { \
+	static dispatch_once_t onceToken; \
+	static dispatch_semaphore_t _semaphore; \
+	dispatch_once(&onceToken, ^{ \
+		_semaphore = dispatch_semaphore_create(1); \
+	}); \
+	dispatch_semaphore_wait(_semaphore, DISPATCH_TIME_FOREVER); \
+	block(); \
+	dispatch_semaphore_signal(_semaphore); \
 }
 
 @interface JCDefine : NSObject
