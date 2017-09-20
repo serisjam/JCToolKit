@@ -13,4 +13,6 @@
 #import "UIControl+JCExtend.h"
 #import "UITabBarItem+JCExtend.h"
 
+#import "JCTagCollectionView.h"
+
 #endif /* JCToolKit_UI_h */

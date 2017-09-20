@@ -62,9 +62,9 @@ Pod::Spec.new do |s|
         sss.public_header_files = 'JCToolKit/Classes/JCUI/Category/*.h'
     end
 
-    ss.subspec 'ExtendClasses' do |sss|
-        sss.source_files = 'JCToolKit/Classes/JCUI/ExtendClasses/*'
-        sss.public_header_files = 'JCToolKit/Classes/JCUI/ExtendClasses/*.h'
+    ss.subspec 'JCTagCollectionView' do |sss|
+        sss.source_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/*'
+        sss.public_header_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/JCTagCollectionView.h'
     end
 
     ss.dependency 'JCToolKit/JCCore'
