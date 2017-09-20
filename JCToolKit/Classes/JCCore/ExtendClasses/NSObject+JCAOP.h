@@ -2,7 +2,7 @@
 //  NSObject+JCAOP.h
 //  Pods
 //
-//  Created by 唐 on 16/12/18.
+//  Created by Jam on 16/12/18.
 //
 //
 
@@ -14,8 +14,17 @@ typedef NS_ENUM(NSUInteger, JCAOPExecuteOptions) {
     JCAOPExecuteOptionBefore
 };
 
+@interface JCAOPInfo : NSObject
+
+@property (nonatomic, unsafe_unretained, readonly) id instance;
+@property (nonatomic, strong, readonly) NSInvocation *originalInvocation;
+@property (nonatomic, strong, readonly) NSArray *arguments;
+
+@end
+
 @interface NSObject (JCAOP)
 
-- (void)jc_hookSelector:(SEL)selector withExcuteOption:(JCAOPExecuteOptions)options usingBlock:(id)block;
++ (void)jc_hookSelector:(SEL)selector withExcuteOption:(JCAOPExecuteOptions)options usingBlock:(void (^)(JCAOPInfo *aopInfo))block;
+- (void)jc_hookSelector:(SEL)selector withExcuteOption:(JCAOPExecuteOptions)options usingBlock:(void (^)(JCAOPInfo *aopInfo))block;
 
 @end
