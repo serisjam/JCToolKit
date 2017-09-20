@@ -30,4 +30,4 @@ JCToolKit is available under the MIT license. See the LICENSE file for more info
 
 ## JCToolKit
 
-JCToolKit快速开发框架是用于快速高效开发的工具库.
+JCToolKit use for quick develope tool.
