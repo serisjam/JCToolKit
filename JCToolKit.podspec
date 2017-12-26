@@ -113,6 +113,11 @@ Pod::Spec.new do |s|
 	ss.dependency 'SDWebImage'
   end
 
+  s.subspec 'JCRouter' do |ss|
+	ss.source_files = 'JCToolKit/Classes/JCRouter/*'
+	ss.public_header_files = 'JCToolKit/Classes/JCRouter/JCRouter.h'
+  end
+
   s.frameworks = 'UIKit', 'ImageIO', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreImage'
   s.dependency 'SAMKeychain'
 
