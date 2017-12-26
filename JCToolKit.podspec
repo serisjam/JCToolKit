@@ -31,13 +31,20 @@ Pod::Spec.new do |s|
   s.source_files = 'JCToolKit/Classes/*'
   s.public_header_files = 'JCToolKit/Classes/JCToolKit.h'
 
+  pch_JCToolKit = <<-EOS
+					#import "AFNetworking.h"
+					#import "NSObject+YYModel.h"
+					#import "YYCache.h"
+					#import "Aspects.h"
+				   EOS
+  s.prefix_header_contents = pch_JCToolKit
+
   s.subspec 'JCDefine' do |ss|
     ss.source_files = 'JCToolKit/Classes/JCDefine/*'
     ss.public_header_files = 'JCToolKit/Classes/JCDefine/*.h'
   end
 
   s.subspec 'JCCore' do |ss|
-
     ss.source_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
     ss.public_header_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
 
@@ -51,6 +58,43 @@ Pod::Spec.new do |s|
         sss.public_header_files = 'JCToolKit/Classes/JCCore/ExtendClasses/*.h'
     end
     ss.dependency 'JCToolKit/JCDefine'
+  end
+
+  s.subspec 'JCNetwork' do |ss|
+	ss.source_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
+	ss.public_header_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
+
+	ss.subspec 'Define' do |sss|
+		sss.source_files = 'JCToolKit/Classes/JCNetwork/Define/*'
+		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Define/*.h'
+	end
+
+	ss.subspec 'Products' do |sss|
+		sss.source_files = 'JCToolKit/Classes/JCNetwork/Products/*'
+		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/JC{Request,Responed}Obj.h'
+		sss.dependency 'JCToolKit/JCNetwork/Define'
+	end
+
+	ss.subspec 'Handle' do |sss|
+		sss.source_files = 'JCToolKit/Classes/JCNetwork/Handle/*'
+		sss.private_header_files = 'JCToolKit/Classes/JCNetwork/Handle/*.h'
+		sss.dependency 'JCToolKit/JCNetwork/Products'
+	end
+
+	ss.subspec 'Service' do |sss|
+		sss.source_files = 'JCToolKit/Classes/JCNetwork/Service/*'
+		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Service/JCRequestProxy.h'
+		sss.dependency 'JCToolKit/JCNetwork/Handle'
+	end
+
+	ss.frameworks = 'UIKit', 'ImageIO', 'Security', 'CFNetwork', 'SystemConfiguration'
+	ss.dependency 'JCToolKit/JCCore'
+	ss.dependency 'AFNetworking'
+	ss.dependency 'YYModel'
+	ss.dependency 'YYCache'
+	ss.dependency 'Aspects'
+	ss.dependency 'SDWebImage'
+
   end
 
   s.subspec 'JCUI' do |ss|

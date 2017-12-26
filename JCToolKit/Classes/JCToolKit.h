@@ -11,6 +11,7 @@
 
 #import "JCDefine.h"
 #import "JCToolKit_Core.h"
+#import "JCToolKit_Network.h"
 #import "JCToolKit_UI.h"
 
 #endif /* JCToolKit_h */
