@@ -60,6 +60,23 @@ Pod::Spec.new do |s|
     ss.dependency 'JCToolKit/JCDefine'
   end
 
+  s.subspec 'JCUI' do |ss|
+	ss.source_files = 'JCToolKit/Classes/JCUI/JCToolKit_UI.h'
+	ss.public_header_files = 'JCToolKit/Classes/JCUI/JCToolKit_UI.h'
+
+	ss.subspec 'Category' do |sss|
+		sss.source_files = 'JCToolKit/Classes/JCUI/Category/*'
+		sss.public_header_files = 'JCToolKit/Classes/JCUI/Category/*.h'
+	end
+
+	ss.subspec 'JCTagCollectionView' do |sss|
+		sss.source_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/*'
+		sss.public_header_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/JCTagCollectionView.h'
+	end
+
+	ss.dependency 'JCToolKit/JCCore'
+  end
+
   s.subspec 'JCNetwork' do |ss|
 	ss.source_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
 	ss.public_header_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
@@ -71,7 +88,7 @@ Pod::Spec.new do |s|
 
 	ss.subspec 'Products' do |sss|
 		sss.source_files = 'JCToolKit/Classes/JCNetwork/Products/*'
-		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/JC{Responed}Obj.h'
+		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Products/JC{Request,Responed}Obj.h'
 		sss.dependency 'JCToolKit/JCNetwork/Define'
 	end
 
@@ -94,24 +111,6 @@ Pod::Spec.new do |s|
 	ss.dependency 'YYCache'
 	ss.dependency 'Aspects'
 	ss.dependency 'SDWebImage'
-
-  end
-
-  s.subspec 'JCUI' do |ss|
-    ss.source_files = 'JCToolKit/Classes/JCUI/JCToolKit_UI.h'
-    ss.public_header_files = 'JCToolKit/Classes/JCUI/JCToolKit_UI.h'
-
-    ss.subspec 'Category' do |sss|
-        sss.source_files = 'JCToolKit/Classes/JCUI/Category/*'
-        sss.public_header_files = 'JCToolKit/Classes/JCUI/Category/*.h'
-    end
-
-    ss.subspec 'JCTagCollectionView' do |sss|
-        sss.source_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/*'
-        sss.public_header_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/JCTagCollectionView.h'
-    end
-
-    ss.dependency 'JCToolKit/JCCore'
   end
 
   s.frameworks = 'UIKit', 'ImageIO', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreImage'
