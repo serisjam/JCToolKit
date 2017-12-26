@@ -74,6 +74,11 @@ Pod::Spec.new do |s|
 		sss.public_header_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/JCTagCollectionView.h'
 	end
 
+	ss.subspec 'JCParallaxHeader' do |sss|
+		sss.source_files = 'JCToolKit/Classes/JCUI/JCParallaxHeader/*'
+		sss.public_header_files = 'JCToolKit/Classes/JCUI/JCParallaxHeader/UIScrollView+JCParallaxHeader.h'
+	end
+
 	ss.dependency 'JCToolKit/JCCore'
   end
 

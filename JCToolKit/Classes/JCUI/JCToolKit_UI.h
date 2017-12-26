@@ -14,5 +14,6 @@
 #import "UITabBarItem+JCExtend.h"
 
 #import "JCTagCollectionView.h"
+#import "UIScrollView+JCParallaxHeader.h"
 
 #endif /* JCToolKit_UI_h */
