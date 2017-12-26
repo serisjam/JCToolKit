@@ -73,7 +73,6 @@ Pod::Spec.new do |s|
 		sss.source_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/*'
 		sss.public_header_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/JCTagCollectionView.h'
 	end
-
 	ss.dependency 'JCToolKit/JCCore'
   end
 
