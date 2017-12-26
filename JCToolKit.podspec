@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
 
 	ss.subspec 'Products' do |sss|
 		sss.source_files = 'JCToolKit/Classes/JCNetwork/Products/*'
-		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/JC{Request,Responed}Obj.h'
+		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/JC{Responed}Obj.h'
 		sss.dependency 'JCToolKit/JCNetwork/Define'
 	end
 
