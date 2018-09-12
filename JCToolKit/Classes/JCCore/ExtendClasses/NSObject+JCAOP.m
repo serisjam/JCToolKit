@@ -8,6 +8,7 @@
 
 #import "NSObject+JCAOP.h"
 #import "JCDefine.h"
+#import "CTBlockDescription.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
 
@@ -82,7 +83,8 @@
 	
 	NSCParameterAssert(block);
 	NSCParameterAssert(selector);
-	NSMethodSignature *blockSignature = jc_signatureForBlock(block);
+	CTBlockDescription *ct = [[CTBlockDescription alloc] initWithBlock:block];
+	NSMethodSignature *blockSignature = ct.blockSignature;
 	
 	JCAOPItemInfo *itemInfo = nil;
 	if (blockSignature) {
@@ -101,44 +103,6 @@
 	NSInvocation *blockInvocation = [NSInvocation invocationWithMethodSignature:self.blockSignature];
 	[blockInvocation setArgument:&info atIndex:1];
 	[blockInvocation invokeWithTarget:self.block];
-}
-
-#pragma mark private method
-
-//block 内部实现，用于获取block signature copy form BlocksKit https://github.com/zwaldowski/BlocksKit.git
-typedef NS_OPTIONS(int, JCBlockFlags) {
-	JCBlockFlagsHasCopyDisposeHelpers = (1 << 25),
-	JCBlockFlagsHasSignature          = (1 << 30)
-};
-
-typedef struct _JCBlock {
-	__unused Class isa;
-	JCBlockFlags flags;
-	__unused int reserved;
-	void (__unused *invoke)(struct _JCBlock *block, ...);
-	struct {
-		unsigned long int reserved;
-		unsigned long int size;
-		void (*copy)(void *dst, const void *src);
-		void (*dispose)(const void *);
-		const char *signature;
-		const char *layout;
-	} *descriptor;
-} *JCBlockRef;
-
-static NSMethodSignature * jc_signatureForBlock(id block) {
-	JCBlockRef layout = (__bridge void *)block;
-	// 如果 block 没有签名直接返回空
-	if (!(layout->flags & JCBlockFlagsHasSignature))
-		return nil;
-	void *desc = layout->descriptor;
-	desc += 2 * sizeof(unsigned long int);
-	if (layout->flags & JCBlockFlagsHasCopyDisposeHelpers)
-		desc += 2 * sizeof(void *);
-	if (!desc)
-		return nil;
-	const char *signature = (*(const char **)desc);
-	return [NSMethodSignature signatureWithObjCTypes:signature];
 }
 
 @end
