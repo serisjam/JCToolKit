@@ -30,6 +30,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'JCToolKit/Classes/*'
   s.public_header_files = 'JCToolKit/Classes/JCToolKit.h'
+  s.resource_bundles = {
+	'JCToolKit' => ['JCToolKit/Assets/**/*.{xib,xcassets,imageset,png,json,storyboard}']
+  }
 
   pch_JCToolKit = <<-EOS
 					#import "AFNetworking.h"
@@ -115,6 +118,12 @@ Pod::Spec.new do |s|
   s.subspec 'JCRouter' do |ss|
 	ss.source_files = 'JCToolKit/Classes/JCRouter/*'
 	ss.public_header_files = 'JCToolKit/Classes/JCRouter/JCRouter.h'
+  end
+
+  s.subspec 'JCMediatorProtocl' do |ss|
+	ss.source_files = 'JCToolKit/Classes/JCMediatorProtocl/*'
+	ss.public_header_files = 'JCToolKit/Classes/JCMediatorProtocl/JCMediatorProtocl.h'
+	ss.dependency 'JCToolKit/JCDefine'
   end
 
   s.frameworks = 'UIKit', 'ImageIO', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreImage'

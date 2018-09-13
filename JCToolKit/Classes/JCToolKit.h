@@ -13,5 +13,7 @@
 #import "JCToolKit_Core.h"
 #import "JCToolKit_Network.h"
 #import "JCToolKit_UI.h"
+#import "JCRouter.h"
+#import "JCMediatorProtocl.h"
 
 #endif /* JCToolKit_h */
