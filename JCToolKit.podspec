@@ -30,9 +30,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'JCToolKit/Classes/*'
   s.public_header_files = 'JCToolKit/Classes/JCToolKit.h'
-  s.resource_bundles = {
-	'JCToolKit' => ['JCToolKit/Assets/**/*.{xib,xcassets,imageset,png,json,storyboard}']
-  }
+#  s.resource_bundles = {
+#	'JCToolKit' => ['JCToolKit/Assets/**/*.{xib,xcassets,imageset,png,json,storyboard}']
+#  }
 
   pch_JCToolKit = <<-EOS
 					#import "AFNetworking.h"
