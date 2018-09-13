@@ -7,7 +7,7 @@
 
 #import "JCDefine.h"
 
-NSString * const JCServicePrefix = @"JC_";
+NSString * const JCServicePrefix = @"JC";
 
 @interface JCMediatorProtocl : NSObject
 
