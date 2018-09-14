@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCToolKit'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'JCToolKit快速开发框架'
 
 # This description is used to generate tags and improve search results.
@@ -127,9 +127,9 @@ Pod::Spec.new do |s|
 	ss.public_header_files = 'JCToolKit/Classes/JCRouter/JCRouter.h'
   end
 
-  s.subspec 'JCMediatorProtocl' do |ss|
-	ss.source_files = 'JCToolKit/Classes/JCMediatorProtocl/*'
-	ss.public_header_files = 'JCToolKit/Classes/JCMediatorProtocl/JCMediatorProtocl.h'
+  s.subspec 'JCMediatorProtocol' do |ss|
+	ss.source_files = 'JCToolKit/Classes/JCMediatorProtocol/*'
+	ss.public_header_files = 'JCToolKit/Classes/JCMediatorProtocol/JCMediatorProtocol.h'
 	ss.dependency 'JCToolKit/JCDefine'
   end
 
