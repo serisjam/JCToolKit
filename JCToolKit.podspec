@@ -34,13 +34,13 @@ Pod::Spec.new do |s|
 #	'JCToolKit' => ['JCToolKit/Assets/**/*.{xib,xcassets,imageset,png,json,storyboard}']
 #  }
 
-  pch_JCToolKit = <<-EOS
-					#import "AFNetworking.h"
-					#import "NSObject+YYModel.h"
-					#import "YYCache.h"
-					#import "Aspects.h"
-				   EOS
-  s.prefix_header_contents = pch_JCToolKit
+#  pch_JCToolKit = <<-EOS
+#					#import "AFNetworking.h"
+#					#import "NSObject+YYModel.h"
+#					#import "YYCache.h"
+#					#import "Aspects.h"
+#				   EOS
+#  s.prefix_header_contents = pch_JCToolKit
 
   s.subspec 'JCDefine' do |ss|
     ss.source_files = 'JCToolKit/Classes/JCDefine/*'
@@ -82,6 +82,13 @@ Pod::Spec.new do |s|
   s.subspec 'JCNetwork' do |ss|
 	ss.source_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
 	ss.public_header_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
+	pch_JCToolKit_Network = <<-EOS
+						#import "AFNetworking.h"
+						#import "NSObject+YYModel.h"
+						#import "YYCache.h"
+						#import "Aspects.h"
+					EOS
+	ss.prefix_header_contents = pch_JCToolKit_Network
 
 	ss.subspec 'Define' do |sss|
 		sss.source_files = 'JCToolKit/Classes/JCNetwork/Define/*'
