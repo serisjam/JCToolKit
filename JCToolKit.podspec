@@ -34,14 +34,6 @@ Pod::Spec.new do |s|
 #	'JCToolKit' => ['JCToolKit/Assets/**/*.{xib,xcassets,imageset,png,json,storyboard}']
 #  }
 
-#  pch_JCToolKit = <<-EOS
-#					#import "AFNetworking.h"
-#					#import "NSObject+YYModel.h"
-#					#import "YYCache.h"
-#					#import "Aspects.h"
-#				   EOS
-#  s.prefix_header_contents = pch_JCToolKit
-
   s.subspec 'JCDefine' do |ss|
     ss.source_files = 'JCToolKit/Classes/JCDefine/*'
     ss.public_header_files = 'JCToolKit/Classes/JCDefine/*.h'
