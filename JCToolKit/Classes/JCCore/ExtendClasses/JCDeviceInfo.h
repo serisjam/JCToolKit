@@ -66,7 +66,4 @@
 //当前用户界面模式
 + (UIUserInterfaceIdiom)currentUserInterfaceIdiom;
 
-//屏幕分辨率
-+ (NSString *)getScreenSize;
-
 @end

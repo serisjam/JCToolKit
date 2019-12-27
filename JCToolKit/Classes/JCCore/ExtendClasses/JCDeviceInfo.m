@@ -7,6 +7,7 @@
 //
 
 #import "JCDeviceInfo.h"
+#import "JCDefine.h"
 #import "SAMKeychain.h"
 
 #import <ifaddrs.h>
@@ -80,11 +81,11 @@
 }
 
 + (NSString *)getBundleVersion {
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    return [[jc_currentBundle infoDictionary] objectForKey:@"CFBundleVersion"];
 }
 
 + (NSString *)getBundleVersionWithNoDot {
-    NSDictionary *infoDict=[[NSBundle mainBundle] infoDictionary];
+    NSDictionary *infoDict=[jc_currentBundle infoDictionary];
     NSString *sVersion=[infoDict objectForKey:@"CFBundleShortVersionString"];
     
     NSRange fRange = [sVersion rangeOfString:@"."];
@@ -107,11 +108,11 @@
 }
 
 + (NSString *)getBundleShortVersion {
-    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    return [jc_currentBundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
 }
 
 + (NSString *)getBundleIdentifier {
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
+    return [[jc_currentBundle infoDictionary] objectForKey:@"CFBundleIdentifier"];
 }
 
 + (NSString *)getIPAddress {
@@ -139,26 +140,13 @@
     return [[UIDevice currentDevice] orientation];
 }
 
-+ (CGFloat)getCurrentBatteryLevel{
-    CGFloat currentBatteryLevel = [[UIDevice currentDevice]batteryLevel];
++ (CGFloat)getCurrentBatteryLevel {
+    CGFloat currentBatteryLevel = [[UIDevice currentDevice] batteryLevel];
     return currentBatteryLevel;
 }
 
-+ (UIUserInterfaceIdiom)currentUserInterfaceIdiom{
-    return [[UIDevice currentDevice]userInterfaceIdiom];
-}
-
-+ (NSString *)getScreenSize {
-    //屏幕尺寸
-    CGRect rect = [[UIScreen mainScreen] bounds];
-    CGSize size = rect.size;
-    CGFloat width = size.width;
-    CGFloat height = size.height;
-    
-    //分辨率
-    CGFloat scale_screen = [UIScreen mainScreen].scale;
-    NSString *screenSize = [NSString stringWithFormat:@"%f*%f", width*scale_screen, height*scale_screen];
-    return screenSize;
++ (UIUserInterfaceIdiom)currentUserInterfaceIdiom {
+    return [[UIDevice currentDevice] userInterfaceIdiom];
 }
 
 @end
