@@ -8,6 +8,7 @@
 #import "JCRequestProxy.h"
 #import "JCRequester.h"
 #import "JCCacheResponedDispatcher.h"
+#import "JCToolKit_Core.h"
 
 #import <objc/runtime.h>
 
@@ -19,14 +20,7 @@
 
 @implementation JCRequestProxy
 
-+ (instancetype)sharedInstance {
-    static dispatch_once_t pred;
-    static JCRequestProxy *sharedInstance = nil;
-    dispatch_once(&pred, ^{
-        sharedInstance = [[JCRequestProxy alloc] init];
-    });
-    return sharedInstance;
-}
+jc_singleton_implementation
 
 - (instancetype)init {
     self = [super init];
@@ -199,7 +193,7 @@
         __weak typeof(self) weakSelf = self;
         [controlObj aspect_hookSelector:aSelector withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo){
             NSMutableArray *requestArrary = [weakSelf getAllRequestID:aspectInfo.instance];
-            [requstIdArrary enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [requstIdArrary enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 [weakSelf cancelRequestID:[obj integerValue]];
             }];
         } error:nil];
@@ -209,13 +203,13 @@
 }
 
 - (NSMutableArray *)getAllRequestID:(NSObject *)controlObj {
-    NSMutableArray *requstIdArrary = objc_getAssociatedObject(controlObj, 'allRequestID');
+    NSMutableArray *requstIdArrary = [controlObj jc_getAssociatedObjectForKey:@"allRequestID"];
     return requstIdArrary;
 }
 
 - (void)setAllRequestID:(NSObject *)controlObj {
     NSMutableArray *requestArrary = [[NSMutableArray alloc] init];
-    objc_setAssociatedObject(controlObj, 'allRequestID', requestArrary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [controlObj jc_retainAssociatedObject:requestArrary forKey:@"allRequestID"];
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "JCDefine.h"
+
 @interface JCCacheResponed : NSObject <NSCoding>
 
 //时间戳
@@ -18,7 +20,7 @@
 
 @interface JCCacheResponedDispatcher : NSObject
 
-+ (id)sharedInstance;
+jc_singleton
 
 - (void)saveCacheResponed:(NSDictionary *)responedDic forKey:(NSString *)cacheKey;
 - (JCCacheResponed *)getCacheResponedWithKey:(NSString *)cacheKey;

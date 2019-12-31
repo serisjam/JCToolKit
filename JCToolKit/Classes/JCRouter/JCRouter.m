@@ -19,15 +19,7 @@
 
 @implementation JCRouter
 
-+ (instancetype)shareRouter {
-    static JCRouter *shareRouter = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        shareRouter = [[JCRouter alloc] init];
-    });
-    
-    return shareRouter;
-}
+jc_singleton_implementation
 
 - (id<UIApplicationDelegate>)applicationDelegate {
     return [UIApplication sharedApplication].delegate;

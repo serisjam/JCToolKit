@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "DispatchElement.h"
 
 @interface JCDispatcher : NSObject {
@@ -17,7 +18,8 @@
 
 @property (nonatomic, readonly) NSMutableDictionary *serviceDict;
 
-+ (id)sharedInstance;
+jc_singleton
+
 - (id)init;
 
 - (void)addGetDispatchItem:(DispatchElement *)item;

@@ -8,6 +8,7 @@
 
 #import "JCRequest.h"
 #import "JCNetworkResponse.h"
+#import "JCDefine.h"
 
 @interface DispatchElement : NSObject
 
@@ -15,8 +16,5 @@
 @property (nonatomic, copy) void (^responseBlock)(JCNetworkResponse *response);
 @property (nonatomic, strong) JCRequest *request;
 @property (nonatomic, strong) NSString *entityClassName;
-
-
-- (id)init;
 
 @end

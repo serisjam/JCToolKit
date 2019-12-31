@@ -10,15 +10,6 @@
 
 @implementation JCCacheResponed
 
-- (instancetype)init {
-    self = [super init];
-    
-    if (self) {
-    }
-    
-    return self;
-}
-
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:[NSNumber numberWithDouble:_timeInterval] forKey:@"timeInterval"];
     [aCoder encodeObject:_responedDic forKey:@"responedDic"];
@@ -43,23 +34,14 @@
 
 @implementation JCCacheResponedDispatcher
 
-+ (id)sharedInstance {
-    static dispatch_once_t pred;
-    static JCCacheResponedDispatcher *sharedInstance = nil;
-    dispatch_once(&pred, ^{
-        sharedInstance = [[JCCacheResponedDispatcher alloc] init];
-    });
-    return sharedInstance;
-}
+jc_singleton_implementation
 
 - (id)init {
     self = [super init];
     
     if (self) {
         self.cache = [[YYCache alloc] initWithName:@"JCNetworkCache"];
-        self.cache.memoryCache.shouldRemoveAllObjectsOnMemoryWarning = YES;
-        self.cache.memoryCache.shouldRemoveAllObjectsWhenEnteringBackground = YES;
-
+        self.cache.memoryCache.shouldRemoveAllObjectsWhenEnteringBackground = NO;
     }
     return self;
 }
@@ -73,7 +55,7 @@
 }
 
 - (JCCacheResponed *)getCacheResponedWithKey:(NSString *)cacheKey {
-    return [self.cache objectForKey:cacheKey];
+    return (JCCacheResponed *)[self.cache objectForKey:cacheKey];
 }
 
 - (void)clearn {

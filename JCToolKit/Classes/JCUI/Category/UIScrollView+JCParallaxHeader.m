@@ -7,6 +7,7 @@
 //
 
 #import "UIScrollView+JCParallaxHeader.h"
+#import "JCToolKit_Core.h"
 
 NSString *const JCParallaxKeyPathContentOffset = @"contentOffset";
 NSString *const JCParallaxKeyPathContentInset = @"contentInset";
@@ -200,14 +201,14 @@ NSString *const JCParallaxKeyPathContentSize = @"contentSize";
 
 @end
 
-static char JCParallaxHeader;
-
 @implementation UIScrollView (JCParallaxHeader)
 
 - (void)dealloc
 {
-	[self removeObserver:self.parallaxView forKeyPath:JCParallaxKeyPathContentOffset];
-	[self removeObserver:self.parallaxView forKeyPath:JCParallaxKeyPathContentInset];
+    if ( self.parallaxView ) {
+        [self removeObserver:self.parallaxView forKeyPath:JCParallaxKeyPathContentOffset];
+        [self removeObserver:self.parallaxView forKeyPath:JCParallaxKeyPathContentInset];
+    }
 }
 
 - (void)setParallaxView:(UIView *)parallaxView withParallaxModel:(JCParallaxModel)parallaxModel withWidth:(CGFloat)width andHeight:(CGFloat)height {
@@ -231,11 +232,11 @@ static char JCParallaxHeader;
         [self addSubview:parallaxView];
     }
     
-    objc_setAssociatedObject(self, &JCParallaxHeader, parallaxView, OBJC_ASSOCIATION_ASSIGN);
+    [self jc_retainAssociatedObject:parallaxView forKey:@"JCParallaxKeyHeader"];
 }
 
 - (JCParallaxView *)parallaxView {
-    return objc_getAssociatedObject(self, &JCParallaxHeader);
+    return [self jc_getAssociatedObjectForKey:@"JCParallaxKeyHeader"];
 }
 
 @end

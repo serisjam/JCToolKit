@@ -13,14 +13,7 @@
 
 @synthesize serviceDict = _serviceDict;
 
-+ (id)sharedInstance {
-    static dispatch_once_t pred;
-    static JCDispatcher *sharedInstance = nil;
-    dispatch_once(&pred, ^{
-        sharedInstance = [[JCDispatcher alloc] init];
-    });
-    return sharedInstance;
-}
+jc_singleton_implementation
 
 - (id)init {
     self = [super init];

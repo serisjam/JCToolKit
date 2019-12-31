@@ -35,19 +35,19 @@
 }
 
 - (NSTimeInterval)acceptEventInterval {
-    return [[self jc_getAssociatedObjectForKey:"UIControl_acceptEventInterval"] doubleValue];
+    return [[self jc_getAssociatedObjectForKey:@"UIControl_acceptEventInterval"] doubleValue];
 }
 
 - (void)setAcceptEventInterval:(NSTimeInterval)acceptEventInterval {
-    [self jc_retainAssociatedObject:@(acceptEventInterval) forKey:"UIControl_acceptEventInterval"];
+    [self jc_retainAssociatedObject:@(acceptEventInterval) forKey:@"UIControl_acceptEventInterval"];
 }
 
 - (NSTimeInterval)acceptEventTime {
-    return [[self jc_getAssociatedObjectForKey:"UIControl_acceptEventTime"] doubleValue];
+    return [[self jc_getAssociatedObjectForKey:@"UIControl_acceptEventTime"] doubleValue];
 }
 
 - (void)setAcceptEventTime:(NSTimeInterval)acceptEventInterval {
-    [self jc_retainAssociatedObject:@(acceptEventInterval) forKey:"UIControl_acceptEventTime"];
+    [self jc_retainAssociatedObject:@(acceptEventInterval) forKey:@"UIControl_acceptEventTime"];
 }
 
 @end

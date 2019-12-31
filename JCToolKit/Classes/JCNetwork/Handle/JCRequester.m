@@ -15,15 +15,7 @@
 
 @implementation JCRequester
 
-+ (id)sharedInstance
-{
-    static dispatch_once_t pred;
-    static JCRequester *sharedInstance = nil;
-    dispatch_once(&pred, ^{
-        sharedInstance = [[JCRequester alloc] init];
-    });
-    return sharedInstance;
-}
+jc_singleton_implementation
 
 - (id)init
 {

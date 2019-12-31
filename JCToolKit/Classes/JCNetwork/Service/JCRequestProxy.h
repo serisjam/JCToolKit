@@ -9,13 +9,14 @@
 #import "JCNetworkResponse.h"
 #import "JCRequestObj.h"
 #import "JCResponedObj.h"
+#import "JCDefine.h"
 
 typedef void(^JCNetworkResponseBlock)(JCNetworkResponse *response);
 typedef void(^JCNetworkImageFetch)(UIImage *fetchImage, BOOL isCache);
 
 @interface JCRequestProxy : NSObject
 
-+ (instancetype)sharedInstance;
+jc_singleton
 
 - (instancetype)init;
 

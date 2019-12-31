@@ -15,14 +15,4 @@
 @synthesize entityClassName = _entityClassName;
 @synthesize request = _request;
 
-
-- (id)init {
-    self = [super init];
-    
-    if (self) {
-    }
-    
-    return self;
-}
-
 @end

@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JCDefine.h"
 
 @interface JCRouter : NSObject
 
 @property (nonatomic, strong) Class defaultNavigationClass;
 
-+ (instancetype)shareRouter;
+jc_singleton
 
 - (void)mapKey:(NSString *)key toController:(Class)controllerClass;
 - (__kindof UIViewController *)mapObjectForKey:(NSString *)key withExtraParams:(NSDictionary *)extraParams;

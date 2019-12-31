@@ -11,14 +11,14 @@
 
 @implementation NSObject (JCExtend)
 
-- (id)jc_getAssociatedObjectForKey:(const char *)key {
-    const char * propName = key;
+- (id)jc_getAssociatedObjectForKey:(NSString *)key {
+    const char * propName = [key UTF8String];
     id currValue = objc_getAssociatedObject( self, propName );
     return currValue;
 }
 
-- (id)jc_retainAssociatedObject:(id)obj forKey:(const char *)key {
-    const char * propName = key;
+- (id)jc_retainAssociatedObject:(id)obj forKey:(NSString *)key {
+    const char * propName = [key UTF8String];
     id oldValue = objc_getAssociatedObject(self, propName );
     objc_setAssociatedObject( self, propName, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC );
     return oldValue;

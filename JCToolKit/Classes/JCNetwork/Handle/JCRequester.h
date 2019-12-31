@@ -20,7 +20,8 @@
     JCDispatcher *_dispatcher;
 }
 
-+ (id)sharedInstance;
+jc_singleton
+
 - (id)init;
 
 - (JCRequestID)httpGetWithRequest:(JCRequestObj *)requestObj entityClass:(NSString *)entityName withCompleteBlock:(void (^)(JCNetworkResponse *response))responedBlock;

@@ -10,7 +10,7 @@
 
 @interface NSObject (JCExtend)
 
-- (id)jc_getAssociatedObjectForKey:(const char *)key;
-- (id)jc_retainAssociatedObject:(id)obj forKey:(const char *)key;
+- (id)jc_getAssociatedObjectForKey:(NSString *)key;
+- (id)jc_retainAssociatedObject:(id)obj forKey:(NSString *)key;
 
 @end

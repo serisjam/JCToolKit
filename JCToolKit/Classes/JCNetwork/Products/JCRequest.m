@@ -10,16 +10,6 @@
 
 @implementation JCRequest
 
-- (instancetype)init {
-    self = [super init];
-    
-    if (self) {
-        
-    }
-    
-    return self;
-}
-
 - (instancetype)initWithRequestObj:(JCRequestObj *)requestObj {
     self = [super init];
     
