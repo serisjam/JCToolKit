@@ -69,7 +69,6 @@
 		36A0AF9923BDD3A60075FC0C /* JCDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5A23BDD3A50075FC0C /* JCDeviceInfo.m */; };
 		36A0AF9A23BDD3A60075FC0C /* JCMediatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5C23BDD3A50075FC0C /* JCMediatorProtocol.h */; };
 		36A0AF9B23BDD3A60075FC0C /* JCMediatorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5D23BDD3A50075FC0C /* JCMediatorProtocol.m */; };
-		36A0AF9F23BDD5090075FC0C /* JCToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF9E23BDD5090075FC0C /* JCToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AFA123BDD5CC0075FC0C /* JCToolKit-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AFA023BDD5CC0075FC0C /* JCToolKit-prefix.pch */; };
 		36A0AFA923BDD6730075FC0C /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0AFA323BDD6730075FC0C /* SAMKeychain.framework */; platformFilter = ios; };
 		36A0AFAB23BDD6730075FC0C /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0AFA423BDD6730075FC0C /* YYModel.framework */; platformFilter = ios; };
@@ -84,6 +83,7 @@
 		36A0AFBF23BDD6EB0075FC0C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0AFBE23BDD6EB0075FC0C /* SystemConfiguration.framework */; platformFilter = ios; };
 		36A0AFC223BDD7DD0075FC0C /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 36A0AFC123BDD7DD0075FC0C /* input.xcfilelist */; };
 		36A0AFC423BDD7FC0075FC0C /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 36A0AFC323BDD7FC0075FC0C /* output.xcfilelist */; };
+		3990F42F23BE1F830052AF14 /* JCToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3990F42E23BE1F830052AF14 /* JCToolKit.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,7 +151,6 @@
 		36A0AF5A23BDD3A50075FC0C /* JCDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDeviceInfo.m; sourceTree = "<group>"; };
 		36A0AF5C23BDD3A50075FC0C /* JCMediatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMediatorProtocol.h; sourceTree = "<group>"; };
 		36A0AF5D23BDD3A50075FC0C /* JCMediatorProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMediatorProtocol.m; sourceTree = "<group>"; };
-		36A0AF9E23BDD5090075FC0C /* JCToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCToolKit.h; path = "JCToolKit-iOS/JCToolKit.h"; sourceTree = SOURCE_ROOT; };
 		36A0AFA023BDD5CC0075FC0C /* JCToolKit-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCToolKit-prefix.pch"; sourceTree = "<group>"; };
 		36A0AFA323BDD6730075FC0C /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/SAMKeychain.framework; sourceTree = "<group>"; };
 		36A0AFA423BDD6730075FC0C /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/YYModel.framework; sourceTree = "<group>"; };
@@ -166,6 +165,7 @@
 		36A0AFBE23BDD6EB0075FC0C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		36A0AFC123BDD7DD0075FC0C /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
 		36A0AFC323BDD7FC0075FC0C /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
+		3990F42E23BE1F830052AF14 /* JCToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCToolKit.h; path = JCToolKit/Classes/JCToolKit.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +222,7 @@
 		36A0AF1123BDD37B0075FC0C /* JCToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				36A0AF9E23BDD5090075FC0C /* JCToolKit.h */,
+				3990F42E23BE1F830052AF14 /* JCToolKit.h */,
 				36A0AF4223BDD3A50075FC0C /* JCDefine */,
 				36A0AF4523BDD3A50075FC0C /* JCCore */,
 				36A0AF5B23BDD3A50075FC0C /* JCMediatorProtocol */,
@@ -432,7 +432,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A0AF9F23BDD5090075FC0C /* JCToolKit.h in Headers */,
 				36A0AF6923BDD3A50075FC0C /* JCCollectionViewFlowLayout.h in Headers */,
 				36A0AF7E23BDD3A50075FC0C /* JCToolKit_Network.h in Headers */,
 				36A0AF8D23BDD3A60075FC0C /* NSData+JCExtend.h in Headers */,
@@ -462,6 +461,7 @@
 				36A0AF6E23BDD3A50075FC0C /* JCResponedObj.h in Headers */,
 				36A0AF7123BDD3A50075FC0C /* JCRequestObj.h in Headers */,
 				36A0AF6323BDD3A50075FC0C /* UIControl+JCExtend.h in Headers */,
+				3990F42F23BE1F830052AF14 /* JCToolKit.h in Headers */,
 				36A0AFA123BDD5CC0075FC0C /* JCToolKit-prefix.pch in Headers */,
 				36A0AF9A23BDD3A60075FC0C /* JCMediatorProtocol.h in Headers */,
 				36A0AF6B23BDD3A50075FC0C /* JCTagCollectionViewCell.h in Headers */,
