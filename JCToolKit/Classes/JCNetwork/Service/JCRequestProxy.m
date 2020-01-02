@@ -188,18 +188,19 @@ jc_singleton_implementation
     if (!requstIdArrary) {
         [self setAllRequestID:controlObj];
         requstIdArrary = [self getAllRequestID:controlObj];
-        
-        SEL aSelector = NSSelectorFromString(@"dealloc");
-        __weak typeof(self) weakSelf = self;
-        [controlObj aspect_hookSelector:aSelector withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo){
-            NSMutableArray *requestArrary = [weakSelf getAllRequestID:aspectInfo.instance];
-            [requstIdArrary enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                [weakSelf cancelRequestID:[obj integerValue]];
-            }];
-        } error:nil];
+    } else {
+        [requstIdArrary addObject:[NSNumber numberWithInt:requestID]];
     }
     
-    [requstIdArrary addObject:[NSNumber numberWithInt:requestID]];
+    // when controlobj should dealloc cancel requset
+    SEL aSelector = NSSelectorFromString(@"dealloc");
+    __weak typeof(self) weakSelf = self;
+    [controlObj jc_hookSelector:aSelector withExcuteOption:JCAOPExecuteOptionBefore usingBlock:^(JCAOPInfo *aopInfo) {
+        NSMutableArray *requestArrary = [weakSelf getAllRequestID:aopInfo.instance];
+        [requestArrary enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            [weakSelf cancelRequestID:[obj unsignedIntValue]];
+        }];
+    }];
 }
 
 - (NSMutableArray *)getAllRequestID:(NSObject *)controlObj {

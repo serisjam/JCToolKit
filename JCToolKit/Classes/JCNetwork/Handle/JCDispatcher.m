@@ -200,6 +200,11 @@ jc_singleton_implementation
 
 - (void)requestFailed:(NSError *)error withDispatchElement:(DispatchElement *)element {
     
+    // cancel request no responed
+    if (-999 == error.code) {
+        return ;
+    }
+    
     JCNetworkResponse *response = [[JCNetworkResponse alloc] init];
     [response setRequestID:element.requestID];
     [response setError:error];

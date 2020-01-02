@@ -75,10 +75,11 @@ Pod::Spec.new do |s|
 	ss.source_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
 	ss.public_header_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
 	pch_JCToolKit_Network = <<-EOS
-						#import "AFNetworking.h"
-						#import "NSObject+YYModel.h"
-						#import "YYCache.h"
-						#import "Aspects.h"
+            #import <AFNetworking/AFNetworking.h>
+            #import <AFNetworking/UIKit+AFNetworking.h>
+            #import <SAMKeychain/SAMKeychain.h>
+            #import <YYModel/YYModel.h>
+            #import <YYCache/YYCache.h>
 					EOS
 	ss.prefix_header_contents = pch_JCToolKit_Network
 
@@ -110,7 +111,6 @@ Pod::Spec.new do |s|
 	ss.dependency 'AFNetworking'
 	ss.dependency 'YYModel'
 	ss.dependency 'YYCache'
-	ss.dependency 'Aspects'
 	ss.dependency 'SDWebImage'
   end
 

@@ -8,7 +8,6 @@
 
 #import "JCDeviceInfo.h"
 #import "JCDefine.h"
-#import "SAMKeychain.h"
 
 #import <ifaddrs.h>
 #import <arpa/inet.h>

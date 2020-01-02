@@ -9,10 +9,6 @@
 #import "JCRequester.h"
 #import "DispatchElement.h"
 
-#import "AFNetworking.h"
-#import "AFImageDownloader.h"
-#import "UIImageView+AFNetworking.h"
-
 @implementation JCRequester
 
 jc_singleton_implementation
