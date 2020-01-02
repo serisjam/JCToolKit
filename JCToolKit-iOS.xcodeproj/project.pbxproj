@@ -11,25 +11,25 @@
 		36A0AF5F23BDD3A50075FC0C /* UIControl+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF1523BDD3A50075FC0C /* UIControl+JCExtend.m */; };
 		36A0AF6023BDD3A50075FC0C /* UIImage+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF1623BDD3A50075FC0C /* UIImage+JCExtend.m */; };
 		36A0AF6123BDD3A50075FC0C /* UITabBarItem+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF1723BDD3A50075FC0C /* UITabBarItem+JCExtend.m */; };
-		36A0AF6223BDD3A50075FC0C /* UIScrollView+JCParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF1823BDD3A50075FC0C /* UIScrollView+JCParallaxHeader.h */; };
-		36A0AF6323BDD3A50075FC0C /* UIControl+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF1923BDD3A50075FC0C /* UIControl+JCExtend.h */; };
-		36A0AF6423BDD3A50075FC0C /* UIImage+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF1A23BDD3A50075FC0C /* UIImage+JCExtend.h */; };
-		36A0AF6523BDD3A50075FC0C /* UITabBarItem+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF1B23BDD3A50075FC0C /* UITabBarItem+JCExtend.h */; };
+		36A0AF6223BDD3A50075FC0C /* UIScrollView+JCParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF1823BDD3A50075FC0C /* UIScrollView+JCParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF6323BDD3A50075FC0C /* UIControl+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF1923BDD3A50075FC0C /* UIControl+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF6423BDD3A50075FC0C /* UIImage+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF1A23BDD3A50075FC0C /* UIImage+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF6523BDD3A50075FC0C /* UITabBarItem+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF1B23BDD3A50075FC0C /* UITabBarItem+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF6623BDD3A50075FC0C /* JCTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF1D23BDD3A50075FC0C /* JCTagCollectionViewCell.m */; };
 		36A0AF6723BDD3A50075FC0C /* JCTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF1E23BDD3A50075FC0C /* JCTagCollectionView.m */; };
 		36A0AF6823BDD3A50075FC0C /* JCCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF1F23BDD3A50075FC0C /* JCCollectionViewFlowLayout.m */; };
 		36A0AF6923BDD3A50075FC0C /* JCCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2023BDD3A50075FC0C /* JCCollectionViewFlowLayout.h */; };
-		36A0AF6A23BDD3A50075FC0C /* JCTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2123BDD3A50075FC0C /* JCTagCollectionView.h */; };
+		36A0AF6A23BDD3A50075FC0C /* JCTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2123BDD3A50075FC0C /* JCTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF6B23BDD3A50075FC0C /* JCTagCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2223BDD3A50075FC0C /* JCTagCollectionViewCell.h */; };
 		36A0AF6C23BDD3A50075FC0C /* JCToolKit_UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2323BDD3A50075FC0C /* JCToolKit_UI.h */; };
 		36A0AF6D23BDD3A50075FC0C /* JCRequestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF2623BDD3A50075FC0C /* JCRequestObj.m */; };
-		36A0AF6E23BDD3A50075FC0C /* JCResponedObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2723BDD3A50075FC0C /* JCResponedObj.h */; };
+		36A0AF6E23BDD3A50075FC0C /* JCResponedObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2723BDD3A50075FC0C /* JCResponedObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF6F23BDD3A50075FC0C /* JCRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2823BDD3A50075FC0C /* JCRequest.h */; };
 		36A0AF7023BDD3A50075FC0C /* JCResponedObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF2923BDD3A50075FC0C /* JCResponedObj.m */; };
-		36A0AF7123BDD3A50075FC0C /* JCRequestObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2A23BDD3A50075FC0C /* JCRequestObj.h */; };
+		36A0AF7123BDD3A50075FC0C /* JCRequestObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2A23BDD3A50075FC0C /* JCRequestObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF7223BDD3A50075FC0C /* JCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF2B23BDD3A50075FC0C /* JCRequest.m */; };
-		36A0AF7323BDD3A50075FC0C /* JCNetworkResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2D23BDD3A50075FC0C /* JCNetworkResponse.h */; };
-		36A0AF7423BDD3A50075FC0C /* JCNetworkDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2E23BDD3A50075FC0C /* JCNetworkDefine.h */; };
+		36A0AF7323BDD3A50075FC0C /* JCNetworkResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2D23BDD3A50075FC0C /* JCNetworkResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF7423BDD3A50075FC0C /* JCNetworkDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF2E23BDD3A50075FC0C /* JCNetworkDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF7523BDD3A50075FC0C /* JCNetworkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF2F23BDD3A50075FC0C /* JCNetworkResponse.m */; };
 		36A0AF7623BDD3A50075FC0C /* JCCacheResponedDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF3123BDD3A50075FC0C /* JCCacheResponedDispatcher.m */; };
 		36A0AF7723BDD3A50075FC0C /* JCRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF3223BDD3A50075FC0C /* JCRequester.m */; };
@@ -39,35 +39,35 @@
 		36A0AF7B23BDD3A50075FC0C /* DispatchElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF3623BDD3A50075FC0C /* DispatchElement.h */; };
 		36A0AF7C23BDD3A50075FC0C /* JCDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF3723BDD3A50075FC0C /* JCDispatcher.h */; };
 		36A0AF7D23BDD3A50075FC0C /* JCRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF3823BDD3A50075FC0C /* JCRequester.h */; };
-		36A0AF7E23BDD3A50075FC0C /* JCToolKit_Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF3923BDD3A50075FC0C /* JCToolKit_Network.h */; };
-		36A0AF7F23BDD3A50075FC0C /* JCRequestProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF3B23BDD3A50075FC0C /* JCRequestProxy.h */; };
+		36A0AF7E23BDD3A50075FC0C /* JCToolKit_Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF3923BDD3A50075FC0C /* JCToolKit_Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF7F23BDD3A50075FC0C /* JCRequestProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF3B23BDD3A50075FC0C /* JCRequestProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF8023BDD3A50075FC0C /* JCRequestProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF3C23BDD3A50075FC0C /* JCRequestProxy.m */; };
 		36A0AF8123BDD3A50075FC0C /* JCRouterParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF3E23BDD3A50075FC0C /* JCRouterParams.h */; };
 		36A0AF8223BDD3A50075FC0C /* JCRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF3F23BDD3A50075FC0C /* JCRouter.m */; };
-		36A0AF8323BDD3A50075FC0C /* JCRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4023BDD3A50075FC0C /* JCRouter.h */; };
+		36A0AF8323BDD3A50075FC0C /* JCRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4023BDD3A50075FC0C /* JCRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF8423BDD3A50075FC0C /* JCRouterParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF4123BDD3A50075FC0C /* JCRouterParams.m */; };
-		36A0AF8523BDD3A50075FC0C /* JCDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4323BDD3A50075FC0C /* JCDefine.h */; };
+		36A0AF8523BDD3A50075FC0C /* JCDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4323BDD3A50075FC0C /* JCDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF8623BDD3A50075FC0C /* JCDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF4423BDD3A50075FC0C /* JCDefine.m */; };
-		36A0AF8723BDD3A50075FC0C /* JCToolKit_Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4623BDD3A50075FC0C /* JCToolKit_Core.h */; };
-		36A0AF8823BDD3A50075FC0C /* NSDictionary+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4823BDD3A50075FC0C /* NSDictionary+JCExtend.h */; };
-		36A0AF8923BDD3A50075FC0C /* NSObject+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4923BDD3A50075FC0C /* NSObject+JCExtend.h */; };
-		36A0AF8A23BDD3A50075FC0C /* NSTimer+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4A23BDD3A50075FC0C /* NSTimer+JCExtend.h */; };
+		36A0AF8723BDD3A50075FC0C /* JCToolKit_Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4623BDD3A50075FC0C /* JCToolKit_Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF8823BDD3A50075FC0C /* NSDictionary+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4823BDD3A50075FC0C /* NSDictionary+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF8923BDD3A50075FC0C /* NSObject+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4923BDD3A50075FC0C /* NSObject+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF8A23BDD3A50075FC0C /* NSTimer+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4A23BDD3A50075FC0C /* NSTimer+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF8B23BDD3A60075FC0C /* NSArray+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF4B23BDD3A50075FC0C /* NSArray+JCExtend.m */; };
-		36A0AF8C23BDD3A60075FC0C /* NSString+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4C23BDD3A50075FC0C /* NSString+JCExtend.h */; };
-		36A0AF8D23BDD3A60075FC0C /* NSData+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4D23BDD3A50075FC0C /* NSData+JCExtend.h */; };
+		36A0AF8C23BDD3A60075FC0C /* NSString+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4C23BDD3A50075FC0C /* NSString+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF8D23BDD3A60075FC0C /* NSData+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF4D23BDD3A50075FC0C /* NSData+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF8E23BDD3A60075FC0C /* NSTimer+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF4E23BDD3A50075FC0C /* NSTimer+JCExtend.m */; };
 		36A0AF8F23BDD3A60075FC0C /* NSObject+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF4F23BDD3A50075FC0C /* NSObject+JCExtend.m */; };
 		36A0AF9023BDD3A60075FC0C /* NSDictionary+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5023BDD3A50075FC0C /* NSDictionary+JCExtend.m */; };
-		36A0AF9123BDD3A60075FC0C /* NSArray+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5123BDD3A50075FC0C /* NSArray+JCExtend.h */; };
+		36A0AF9123BDD3A60075FC0C /* NSArray+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5123BDD3A50075FC0C /* NSArray+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF9223BDD3A60075FC0C /* NSData+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5223BDD3A50075FC0C /* NSData+JCExtend.m */; };
 		36A0AF9323BDD3A60075FC0C /* NSString+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5323BDD3A50075FC0C /* NSString+JCExtend.m */; };
 		36A0AF9423BDD3A60075FC0C /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5523BDD3A50075FC0C /* CTBlockDescription.m */; };
-		36A0AF9523BDD3A60075FC0C /* NSObject+JCAOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5623BDD3A50075FC0C /* NSObject+JCAOP.h */; };
-		36A0AF9623BDD3A60075FC0C /* JCDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5723BDD3A50075FC0C /* JCDeviceInfo.h */; };
+		36A0AF9523BDD3A60075FC0C /* NSObject+JCAOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5623BDD3A50075FC0C /* NSObject+JCAOP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A0AF9623BDD3A60075FC0C /* JCDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5723BDD3A50075FC0C /* JCDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF9723BDD3A60075FC0C /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5823BDD3A50075FC0C /* CTBlockDescription.h */; };
 		36A0AF9823BDD3A60075FC0C /* NSObject+JCAOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5923BDD3A50075FC0C /* NSObject+JCAOP.m */; };
 		36A0AF9923BDD3A60075FC0C /* JCDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5A23BDD3A50075FC0C /* JCDeviceInfo.m */; };
-		36A0AF9A23BDD3A60075FC0C /* JCMediatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5C23BDD3A50075FC0C /* JCMediatorProtocol.h */; };
+		36A0AF9A23BDD3A60075FC0C /* JCMediatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AF5C23BDD3A50075FC0C /* JCMediatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A0AF9B23BDD3A60075FC0C /* JCMediatorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0AF5D23BDD3A50075FC0C /* JCMediatorProtocol.m */; };
 		36A0AFA123BDD5CC0075FC0C /* JCToolKit-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 36A0AFA023BDD5CC0075FC0C /* JCToolKit-prefix.pch */; };
 		36A0AFA923BDD6730075FC0C /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0AFA323BDD6730075FC0C /* SAMKeychain.framework */; platformFilter = ios; };
@@ -83,7 +83,7 @@
 		36A0AFBF23BDD6EB0075FC0C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0AFBE23BDD6EB0075FC0C /* SystemConfiguration.framework */; platformFilter = ios; };
 		36A0AFC223BDD7DD0075FC0C /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 36A0AFC123BDD7DD0075FC0C /* input.xcfilelist */; };
 		36A0AFC423BDD7FC0075FC0C /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 36A0AFC323BDD7FC0075FC0C /* output.xcfilelist */; };
-		3990F42F23BE1F830052AF14 /* JCToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3990F42E23BE1F830052AF14 /* JCToolKit.h */; };
+		3990F42F23BE1F830052AF14 /* JCToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3990F42E23BE1F830052AF14 /* JCToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -236,9 +236,9 @@
 		36A0AF1223BDD3A50075FC0C /* JCUI */ = {
 			isa = PBXGroup;
 			children = (
+				36A0AF2323BDD3A50075FC0C /* JCToolKit_UI.h */,
 				36A0AF1323BDD3A50075FC0C /* Category */,
 				36A0AF1C23BDD3A50075FC0C /* JCTagCollectionView */,
-				36A0AF2323BDD3A50075FC0C /* JCToolKit_UI.h */,
 			);
 			name = JCUI;
 			path = JCToolKit/Classes/JCUI;
@@ -247,14 +247,14 @@
 		36A0AF1323BDD3A50075FC0C /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				36A0AF1423BDD3A50075FC0C /* UIScrollView+JCParallaxHeader.m */,
-				36A0AF1523BDD3A50075FC0C /* UIControl+JCExtend.m */,
-				36A0AF1623BDD3A50075FC0C /* UIImage+JCExtend.m */,
-				36A0AF1723BDD3A50075FC0C /* UITabBarItem+JCExtend.m */,
 				36A0AF1823BDD3A50075FC0C /* UIScrollView+JCParallaxHeader.h */,
+				36A0AF1423BDD3A50075FC0C /* UIScrollView+JCParallaxHeader.m */,
 				36A0AF1923BDD3A50075FC0C /* UIControl+JCExtend.h */,
+				36A0AF1523BDD3A50075FC0C /* UIControl+JCExtend.m */,
 				36A0AF1A23BDD3A50075FC0C /* UIImage+JCExtend.h */,
+				36A0AF1623BDD3A50075FC0C /* UIImage+JCExtend.m */,
 				36A0AF1B23BDD3A50075FC0C /* UITabBarItem+JCExtend.h */,
+				36A0AF1723BDD3A50075FC0C /* UITabBarItem+JCExtend.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -262,12 +262,12 @@
 		36A0AF1C23BDD3A50075FC0C /* JCTagCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				36A0AF1D23BDD3A50075FC0C /* JCTagCollectionViewCell.m */,
-				36A0AF1E23BDD3A50075FC0C /* JCTagCollectionView.m */,
-				36A0AF1F23BDD3A50075FC0C /* JCCollectionViewFlowLayout.m */,
-				36A0AF2023BDD3A50075FC0C /* JCCollectionViewFlowLayout.h */,
 				36A0AF2123BDD3A50075FC0C /* JCTagCollectionView.h */,
+				36A0AF1E23BDD3A50075FC0C /* JCTagCollectionView.m */,
 				36A0AF2223BDD3A50075FC0C /* JCTagCollectionViewCell.h */,
+				36A0AF1D23BDD3A50075FC0C /* JCTagCollectionViewCell.m */,
+				36A0AF2023BDD3A50075FC0C /* JCCollectionViewFlowLayout.h */,
+				36A0AF1F23BDD3A50075FC0C /* JCCollectionViewFlowLayout.m */,
 			);
 			path = JCTagCollectionView;
 			sourceTree = "<group>";
@@ -275,10 +275,10 @@
 		36A0AF2423BDD3A50075FC0C /* JCNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				36A0AF2523BDD3A50075FC0C /* Products */,
-				36A0AF2C23BDD3A50075FC0C /* Define */,
-				36A0AF3023BDD3A50075FC0C /* Handle */,
 				36A0AF3923BDD3A50075FC0C /* JCToolKit_Network.h */,
+				36A0AF2C23BDD3A50075FC0C /* Define */,
+				36A0AF2523BDD3A50075FC0C /* Products */,
+				36A0AF3023BDD3A50075FC0C /* Handle */,
 				36A0AF3A23BDD3A50075FC0C /* Service */,
 			);
 			name = JCNetwork;
@@ -288,11 +288,11 @@
 		36A0AF2523BDD3A50075FC0C /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				36A0AF2A23BDD3A50075FC0C /* JCRequestObj.h */,
 				36A0AF2623BDD3A50075FC0C /* JCRequestObj.m */,
 				36A0AF2723BDD3A50075FC0C /* JCResponedObj.h */,
-				36A0AF2823BDD3A50075FC0C /* JCRequest.h */,
 				36A0AF2923BDD3A50075FC0C /* JCResponedObj.m */,
-				36A0AF2A23BDD3A50075FC0C /* JCRequestObj.h */,
+				36A0AF2823BDD3A50075FC0C /* JCRequest.h */,
 				36A0AF2B23BDD3A50075FC0C /* JCRequest.m */,
 			);
 			path = Products;
@@ -301,8 +301,8 @@
 		36A0AF2C23BDD3A50075FC0C /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				36A0AF2D23BDD3A50075FC0C /* JCNetworkResponse.h */,
 				36A0AF2E23BDD3A50075FC0C /* JCNetworkDefine.h */,
+				36A0AF2D23BDD3A50075FC0C /* JCNetworkResponse.h */,
 				36A0AF2F23BDD3A50075FC0C /* JCNetworkResponse.m */,
 			);
 			path = Define;
@@ -311,14 +311,14 @@
 		36A0AF3023BDD3A50075FC0C /* Handle */ = {
 			isa = PBXGroup;
 			children = (
-				36A0AF3123BDD3A50075FC0C /* JCCacheResponedDispatcher.m */,
-				36A0AF3223BDD3A50075FC0C /* JCRequester.m */,
-				36A0AF3323BDD3A50075FC0C /* JCDispatcher.m */,
-				36A0AF3423BDD3A50075FC0C /* DispatchElement.m */,
 				36A0AF3523BDD3A50075FC0C /* JCCacheResponedDispatcher.h */,
-				36A0AF3623BDD3A50075FC0C /* DispatchElement.h */,
-				36A0AF3723BDD3A50075FC0C /* JCDispatcher.h */,
+				36A0AF3123BDD3A50075FC0C /* JCCacheResponedDispatcher.m */,
 				36A0AF3823BDD3A50075FC0C /* JCRequester.h */,
+				36A0AF3223BDD3A50075FC0C /* JCRequester.m */,
+				36A0AF3723BDD3A50075FC0C /* JCDispatcher.h */,
+				36A0AF3323BDD3A50075FC0C /* JCDispatcher.m */,
+				36A0AF3623BDD3A50075FC0C /* DispatchElement.h */,
+				36A0AF3423BDD3A50075FC0C /* DispatchElement.m */,
 			);
 			path = Handle;
 			sourceTree = "<group>";
@@ -335,9 +335,9 @@
 		36A0AF3D23BDD3A50075FC0C /* JCRouter */ = {
 			isa = PBXGroup;
 			children = (
-				36A0AF3E23BDD3A50075FC0C /* JCRouterParams.h */,
-				36A0AF3F23BDD3A50075FC0C /* JCRouter.m */,
 				36A0AF4023BDD3A50075FC0C /* JCRouter.h */,
+				36A0AF3F23BDD3A50075FC0C /* JCRouter.m */,
+				36A0AF3E23BDD3A50075FC0C /* JCRouterParams.h */,
 				36A0AF4123BDD3A50075FC0C /* JCRouterParams.m */,
 			);
 			name = JCRouter;
