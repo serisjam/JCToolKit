@@ -106,12 +106,11 @@ Pod::Spec.new do |s|
 		sss.dependency 'JCToolKit/JCNetwork/Handle'
 	end
 
-	ss.frameworks = 'UIKit', 'ImageIO', 'Security', 'CFNetwork', 'SystemConfiguration'
+	ss.frameworks = 'Security', 'MobileCoreServices', 'CoreGraphics', 'SystemConfiguration'
 	ss.dependency 'JCToolKit/JCCore'
 	ss.dependency 'AFNetworking'
 	ss.dependency 'YYModel'
 	ss.dependency 'YYCache'
-	ss.dependency 'SDWebImage'
   end
 
   s.subspec 'JCRouter' do |ss|
@@ -126,7 +125,7 @@ Pod::Spec.new do |s|
 	ss.dependency 'JCToolKit/JCDefine'
   end
 
-  s.frameworks = 'UIKit', 'ImageIO', 'SystemConfiguration', 'Security', 'Accelerate', 'CoreImage'
+  s.frameworks = 'UIKit', 'ImageIO', 'CoreImage'
   s.dependency 'SAMKeychain'
 
 end
