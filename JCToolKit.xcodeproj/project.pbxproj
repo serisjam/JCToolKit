@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36546FD623BF276300794F84 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FD523BF276300794F84 /* AFNetworking.framework */; platformFilter = ios; };
+		36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FD923BF278B00794F84 /* UIKit.framework */; platformFilter = ios; };
+		36546FDC23BF279600794F84 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FDB23BF279600794F84 /* ImageIO.framework */; platformFilter = ios; };
+		36546FDE23BF27A300794F84 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FDD23BF27A300794F84 /* SystemConfiguration.framework */; };
+		36546FE023BF27B200794F84 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FDF23BF27B200794F84 /* Security.framework */; platformFilter = ios; };
+		36546FE223BF27BE00794F84 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FE123BF27BE00794F84 /* CFNetwork.framework */; platformFilter = ios; };
+		36546FE423BF27CB00794F84 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FE323BF27CB00794F84 /* Accelerate.framework */; platformFilter = ios; };
+		36546FE623BF27D500794F84 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FE523BF27D500794F84 /* CoreImage.framework */; platformFilter = ios; };
+		36546FE923BF2B2900794F84 /* JCToolKit-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */; };
+		3654703723BF2B3A00794F84 /* JCRequestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FEC23BF2B3A00794F84 /* JCRequestObj.m */; };
+		3654703823BF2B3A00794F84 /* JCResponedObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FED23BF2B3A00794F84 /* JCResponedObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654703923BF2B3A00794F84 /* JCRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FEE23BF2B3A00794F84 /* JCRequest.h */; };
+		3654703A23BF2B3A00794F84 /* JCResponedObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FEF23BF2B3A00794F84 /* JCResponedObj.m */; };
+		3654703B23BF2B3A00794F84 /* JCRequestObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FF023BF2B3A00794F84 /* JCRequestObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654703C23BF2B3A00794F84 /* JCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FF123BF2B3A00794F84 /* JCRequest.m */; };
+		3654703D23BF2B3A00794F84 /* JCNetworkResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FF323BF2B3A00794F84 /* JCNetworkResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654703E23BF2B3A00794F84 /* JCNetworkDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FF423BF2B3A00794F84 /* JCNetworkDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654703F23BF2B3A00794F84 /* JCNetworkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FF523BF2B3A00794F84 /* JCNetworkResponse.m */; };
+		3654704023BF2B3A00794F84 /* JCCacheResponedDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FF723BF2B3A00794F84 /* JCCacheResponedDispatcher.m */; };
+		3654704123BF2B3A00794F84 /* JCRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FF823BF2B3A00794F84 /* JCRequester.m */; };
+		3654704223BF2B3A00794F84 /* JCDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FF923BF2B3A00794F84 /* JCDispatcher.m */; };
+		3654704323BF2B3A00794F84 /* DispatchElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FFA23BF2B3A00794F84 /* DispatchElement.m */; };
+		3654704423BF2B3A00794F84 /* JCCacheResponedDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FFB23BF2B3A00794F84 /* JCCacheResponedDispatcher.h */; };
+		3654704523BF2B3A00794F84 /* DispatchElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FFC23BF2B3A00794F84 /* DispatchElement.h */; };
+		3654704623BF2B3A00794F84 /* JCDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FFD23BF2B3A00794F84 /* JCDispatcher.h */; };
+		3654704723BF2B3A00794F84 /* JCRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FFE23BF2B3A00794F84 /* JCRequester.h */; };
+		3654704823BF2B3A00794F84 /* JCToolKit_Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FFF23BF2B3A00794F84 /* JCToolKit_Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654704923BF2B3A00794F84 /* JCRequestProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654700123BF2B3A00794F84 /* JCRequestProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654704A23BF2B3A00794F84 /* JCRequestProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654700223BF2B3A00794F84 /* JCRequestProxy.m */; };
+		3654704B23BF2B3A00794F84 /* JCMediatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654700423BF2B3A00794F84 /* JCMediatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654704C23BF2B3A00794F84 /* JCMediatorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654700523BF2B3A00794F84 /* JCMediatorProtocol.m */; };
+		3654704D23BF2B3A00794F84 /* JCDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654700723BF2B3A00794F84 /* JCDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654704E23BF2B3A00794F84 /* JCDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654700823BF2B3A00794F84 /* JCDefine.m */; };
+		3654704F23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654700B23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.m */; };
+		3654705023BF2B3A00794F84 /* UIControl+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654700C23BF2B3A00794F84 /* UIControl+JCExtend.m */; };
+		3654705123BF2B3A00794F84 /* UIImage+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654700D23BF2B3A00794F84 /* UIImage+JCExtend.m */; };
+		3654705223BF2B3A00794F84 /* UITabBarItem+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654700E23BF2B3A00794F84 /* UITabBarItem+JCExtend.m */; };
+		3654705323BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654700F23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654705423BF2B3A00794F84 /* UIControl+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701023BF2B3A00794F84 /* UIControl+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654705523BF2B3A00794F84 /* UIImage+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701123BF2B3A00794F84 /* UIImage+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654705623BF2B3A00794F84 /* UITabBarItem+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701223BF2B3A00794F84 /* UITabBarItem+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654705723BF2B3A00794F84 /* JCTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654701423BF2B3A00794F84 /* JCTagCollectionViewCell.m */; };
+		3654705823BF2B3A00794F84 /* JCTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654701523BF2B3A00794F84 /* JCTagCollectionView.m */; };
+		3654705923BF2B3A00794F84 /* JCCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654701623BF2B3A00794F84 /* JCCollectionViewFlowLayout.m */; };
+		3654705A23BF2B3A00794F84 /* JCCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701723BF2B3A00794F84 /* JCCollectionViewFlowLayout.h */; };
+		3654705B23BF2B3A00794F84 /* JCTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701823BF2B3A00794F84 /* JCTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654705C23BF2B3A00794F84 /* JCTagCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701923BF2B3A00794F84 /* JCTagCollectionViewCell.h */; };
+		3654705D23BF2B3A00794F84 /* JCToolKit_UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701A23BF2B3A00794F84 /* JCToolKit_UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654705E23BF2B3A00794F84 /* JCRouterParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701C23BF2B3A00794F84 /* JCRouterParams.h */; };
+		3654705F23BF2B3A00794F84 /* JCRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654701D23BF2B3A00794F84 /* JCRouter.m */; };
+		3654706023BF2B3A00794F84 /* JCRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654701E23BF2B3A00794F84 /* JCRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706123BF2B3A00794F84 /* JCRouterParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654701F23BF2B3A00794F84 /* JCRouterParams.m */; };
+		3654706223BF2B3A00794F84 /* JCToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654702023BF2B3A00794F84 /* JCToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706323BF2B3A00794F84 /* JCToolKit_Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654702223BF2B3A00794F84 /* JCToolKit_Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706423BF2B3A00794F84 /* NSDictionary+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654702423BF2B3A00794F84 /* NSDictionary+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706523BF2B3A00794F84 /* NSObject+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654702523BF2B3A00794F84 /* NSObject+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706623BF2B3A00794F84 /* NSTimer+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654702623BF2B3A00794F84 /* NSTimer+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706723BF2B3A00794F84 /* NSArray+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654702723BF2B3A00794F84 /* NSArray+JCExtend.m */; };
+		3654706823BF2B3A00794F84 /* NSString+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654702823BF2B3A00794F84 /* NSString+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706923BF2B3A00794F84 /* NSData+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654702923BF2B3A00794F84 /* NSData+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706A23BF2B3A00794F84 /* NSTimer+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654702A23BF2B3A00794F84 /* NSTimer+JCExtend.m */; };
+		3654706B23BF2B3A00794F84 /* NSObject+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654702B23BF2B3A00794F84 /* NSObject+JCExtend.m */; };
+		3654706C23BF2B3A00794F84 /* NSDictionary+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654702C23BF2B3A00794F84 /* NSDictionary+JCExtend.m */; };
+		3654706D23BF2B3A00794F84 /* NSArray+JCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654702D23BF2B3A00794F84 /* NSArray+JCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654706E23BF2B3A00794F84 /* NSData+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654702E23BF2B3A00794F84 /* NSData+JCExtend.m */; };
+		3654706F23BF2B3A00794F84 /* NSString+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654702F23BF2B3A00794F84 /* NSString+JCExtend.m */; };
+		3654707023BF2B3A00794F84 /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703123BF2B3A00794F84 /* CTBlockDescription.m */; };
+		3654707123BF2B3A00794F84 /* NSObject+JCAOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703223BF2B3A00794F84 /* NSObject+JCAOP.h */; };
+		3654707223BF2B3A00794F84 /* JCDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703323BF2B3A00794F84 /* JCDeviceInfo.h */; };
+		3654707323BF2B3A00794F84 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703423BF2B3A00794F84 /* CTBlockDescription.h */; };
+		3654707423BF2B3A00794F84 /* NSObject+JCAOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */; };
+		3654707523BF2B3A00794F84 /* JCDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703623BF2B3A00794F84 /* JCDeviceInfo.m */; };
+		3654707A23BF2CE800794F84 /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654707623BF2CE700794F84 /* YYModel.framework */; platformFilter = ios; };
+		3654707C23BF2CE800794F84 /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654707723BF2CE800794F84 /* YYCache.framework */; platformFilter = ios; };
+		3654708023BF2CE800794F84 /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654707923BF2CE800794F84 /* SAMKeychain.framework */; platformFilter = ios; };
+		3654708423BF2EE000794F84 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654708323BF2EE000794F84 /* MobileCoreServices.framework */; platformFilter = ios; };
+		3654708623BF2EF000794F84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654708523BF2EF000794F84 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36546FCC23BF25F300794F84 /* JCToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36546FCF23BF25F300794F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36546FD523BF276300794F84 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		36546FD923BF278B00794F84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		36546FDB23BF279600794F84 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		36546FDD23BF27A300794F84 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		36546FDF23BF27B200794F84 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		36546FE123BF27BE00794F84 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		36546FE323BF27CB00794F84 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		36546FE523BF27D500794F84 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCToolKit-prefix.pch"; sourceTree = "<group>"; };
+		36546FEC23BF2B3A00794F84 /* JCRequestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRequestObj.m; sourceTree = "<group>"; };
+		36546FED23BF2B3A00794F84 /* JCResponedObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCResponedObj.h; sourceTree = "<group>"; };
+		36546FEE23BF2B3A00794F84 /* JCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRequest.h; sourceTree = "<group>"; };
+		36546FEF23BF2B3A00794F84 /* JCResponedObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCResponedObj.m; sourceTree = "<group>"; };
+		36546FF023BF2B3A00794F84 /* JCRequestObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRequestObj.h; sourceTree = "<group>"; };
+		36546FF123BF2B3A00794F84 /* JCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRequest.m; sourceTree = "<group>"; };
+		36546FF323BF2B3A00794F84 /* JCNetworkResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNetworkResponse.h; sourceTree = "<group>"; };
+		36546FF423BF2B3A00794F84 /* JCNetworkDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNetworkDefine.h; sourceTree = "<group>"; };
+		36546FF523BF2B3A00794F84 /* JCNetworkResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNetworkResponse.m; sourceTree = "<group>"; };
+		36546FF723BF2B3A00794F84 /* JCCacheResponedDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCacheResponedDispatcher.m; sourceTree = "<group>"; };
+		36546FF823BF2B3A00794F84 /* JCRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRequester.m; sourceTree = "<group>"; };
+		36546FF923BF2B3A00794F84 /* JCDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDispatcher.m; sourceTree = "<group>"; };
+		36546FFA23BF2B3A00794F84 /* DispatchElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchElement.m; sourceTree = "<group>"; };
+		36546FFB23BF2B3A00794F84 /* JCCacheResponedDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCacheResponedDispatcher.h; sourceTree = "<group>"; };
+		36546FFC23BF2B3A00794F84 /* DispatchElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchElement.h; sourceTree = "<group>"; };
+		36546FFD23BF2B3A00794F84 /* JCDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDispatcher.h; sourceTree = "<group>"; };
+		36546FFE23BF2B3A00794F84 /* JCRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRequester.h; sourceTree = "<group>"; };
+		36546FFF23BF2B3A00794F84 /* JCToolKit_Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCToolKit_Network.h; sourceTree = "<group>"; };
+		3654700123BF2B3A00794F84 /* JCRequestProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRequestProxy.h; sourceTree = "<group>"; };
+		3654700223BF2B3A00794F84 /* JCRequestProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRequestProxy.m; sourceTree = "<group>"; };
+		3654700423BF2B3A00794F84 /* JCMediatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMediatorProtocol.h; sourceTree = "<group>"; };
+		3654700523BF2B3A00794F84 /* JCMediatorProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMediatorProtocol.m; sourceTree = "<group>"; };
+		3654700723BF2B3A00794F84 /* JCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDefine.h; sourceTree = "<group>"; };
+		3654700823BF2B3A00794F84 /* JCDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDefine.m; sourceTree = "<group>"; };
+		3654700B23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+JCParallaxHeader.m"; sourceTree = "<group>"; };
+		3654700C23BF2B3A00794F84 /* UIControl+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+JCExtend.m"; sourceTree = "<group>"; };
+		3654700D23BF2B3A00794F84 /* UIImage+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JCExtend.m"; sourceTree = "<group>"; };
+		3654700E23BF2B3A00794F84 /* UITabBarItem+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+JCExtend.m"; sourceTree = "<group>"; };
+		3654700F23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+JCParallaxHeader.h"; sourceTree = "<group>"; };
+		3654701023BF2B3A00794F84 /* UIControl+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+JCExtend.h"; sourceTree = "<group>"; };
+		3654701123BF2B3A00794F84 /* UIImage+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JCExtend.h"; sourceTree = "<group>"; };
+		3654701223BF2B3A00794F84 /* UITabBarItem+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+JCExtend.h"; sourceTree = "<group>"; };
+		3654701423BF2B3A00794F84 /* JCTagCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTagCollectionViewCell.m; sourceTree = "<group>"; };
+		3654701523BF2B3A00794F84 /* JCTagCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTagCollectionView.m; sourceTree = "<group>"; };
+		3654701623BF2B3A00794F84 /* JCCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		3654701723BF2B3A00794F84 /* JCCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		3654701823BF2B3A00794F84 /* JCTagCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTagCollectionView.h; sourceTree = "<group>"; };
+		3654701923BF2B3A00794F84 /* JCTagCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTagCollectionViewCell.h; sourceTree = "<group>"; };
+		3654701A23BF2B3A00794F84 /* JCToolKit_UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCToolKit_UI.h; sourceTree = "<group>"; };
+		3654701C23BF2B3A00794F84 /* JCRouterParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRouterParams.h; sourceTree = "<group>"; };
+		3654701D23BF2B3A00794F84 /* JCRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRouter.m; sourceTree = "<group>"; };
+		3654701E23BF2B3A00794F84 /* JCRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRouter.h; sourceTree = "<group>"; };
+		3654701F23BF2B3A00794F84 /* JCRouterParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRouterParams.m; sourceTree = "<group>"; };
+		3654702023BF2B3A00794F84 /* JCToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCToolKit.h; path = JCToolKit/Classes/JCToolKit.h; sourceTree = SOURCE_ROOT; };
+		3654702223BF2B3A00794F84 /* JCToolKit_Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCToolKit_Core.h; sourceTree = "<group>"; };
+		3654702423BF2B3A00794F84 /* NSDictionary+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JCExtend.h"; sourceTree = "<group>"; };
+		3654702523BF2B3A00794F84 /* NSObject+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JCExtend.h"; sourceTree = "<group>"; };
+		3654702623BF2B3A00794F84 /* NSTimer+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+JCExtend.h"; sourceTree = "<group>"; };
+		3654702723BF2B3A00794F84 /* NSArray+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JCExtend.m"; sourceTree = "<group>"; };
+		3654702823BF2B3A00794F84 /* NSString+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JCExtend.h"; sourceTree = "<group>"; };
+		3654702923BF2B3A00794F84 /* NSData+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JCExtend.h"; sourceTree = "<group>"; };
+		3654702A23BF2B3A00794F84 /* NSTimer+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+JCExtend.m"; sourceTree = "<group>"; };
+		3654702B23BF2B3A00794F84 /* NSObject+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JCExtend.m"; sourceTree = "<group>"; };
+		3654702C23BF2B3A00794F84 /* NSDictionary+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JCExtend.m"; sourceTree = "<group>"; };
+		3654702D23BF2B3A00794F84 /* NSArray+JCExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JCExtend.h"; sourceTree = "<group>"; };
+		3654702E23BF2B3A00794F84 /* NSData+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JCExtend.m"; sourceTree = "<group>"; };
+		3654702F23BF2B3A00794F84 /* NSString+JCExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JCExtend.m"; sourceTree = "<group>"; };
+		3654703123BF2B3A00794F84 /* CTBlockDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBlockDescription.m; sourceTree = "<group>"; };
+		3654703223BF2B3A00794F84 /* NSObject+JCAOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JCAOP.h"; sourceTree = "<group>"; };
+		3654703323BF2B3A00794F84 /* JCDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDeviceInfo.h; sourceTree = "<group>"; };
+		3654703423BF2B3A00794F84 /* CTBlockDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
+		3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JCAOP.m"; sourceTree = "<group>"; };
+		3654703623BF2B3A00794F84 /* JCDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDeviceInfo.m; sourceTree = "<group>"; };
+		3654707623BF2CE700794F84 /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/YYModel.framework; sourceTree = "<group>"; };
+		3654707723BF2CE800794F84 /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYCache.framework; path = Carthage/Build/iOS/YYCache.framework; sourceTree = "<group>"; };
+		3654707923BF2CE800794F84 /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/SAMKeychain.framework; sourceTree = "<group>"; };
+		3654708323BF2EE000794F84 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3654708523BF2EF000794F84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36546FC923BF25F300794F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3654708623BF2EF000794F84 /* CoreGraphics.framework in Frameworks */,
+				36546FE223BF27BE00794F84 /* CFNetwork.framework in Frameworks */,
+				36546FE423BF27CB00794F84 /* Accelerate.framework in Frameworks */,
+				36546FD623BF276300794F84 /* AFNetworking.framework in Frameworks */,
+				3654707C23BF2CE800794F84 /* YYCache.framework in Frameworks */,
+				36546FE623BF27D500794F84 /* CoreImage.framework in Frameworks */,
+				36546FE023BF27B200794F84 /* Security.framework in Frameworks */,
+				3654707A23BF2CE800794F84 /* YYModel.framework in Frameworks */,
+				36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */,
+				36546FDE23BF27A300794F84 /* SystemConfiguration.framework in Frameworks */,
+				3654708423BF2EE000794F84 /* MobileCoreServices.framework in Frameworks */,
+				3654708023BF2CE800794F84 /* SAMKeychain.framework in Frameworks */,
+				36546FDC23BF279600794F84 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36546FB223BF25D600794F84 = {
+			isa = PBXGroup;
+			children = (
+				36546FCD23BF25F300794F84 /* JCToolKit iOS */,
+				36546FBD23BF25D600794F84 /* Products */,
+				36546FD423BF276100794F84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36546FBD23BF25D600794F84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36546FCC23BF25F300794F84 /* JCToolKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36546FCD23BF25F300794F84 /* JCToolKit iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3654702023BF2B3A00794F84 /* JCToolKit.h */,
+				3654700623BF2B3A00794F84 /* JCDefine */,
+				3654702123BF2B3A00794F84 /* JCCore */,
+				3654700323BF2B3A00794F84 /* JCMediatorProtocol */,
+				36546FEA23BF2B3A00794F84 /* JCNetwork */,
+				3654701B23BF2B3A00794F84 /* JCRouter */,
+				3654700923BF2B3A00794F84 /* JCUI */,
+				36546FCF23BF25F300794F84 /* Info.plist */,
+				36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */,
+			);
+			path = "JCToolKit iOS";
+			sourceTree = "<group>";
+		};
+		36546FD423BF276100794F84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3654708523BF2EF000794F84 /* CoreGraphics.framework */,
+				3654708323BF2EE000794F84 /* MobileCoreServices.framework */,
+				3654707923BF2CE800794F84 /* SAMKeychain.framework */,
+				3654707723BF2CE800794F84 /* YYCache.framework */,
+				3654707623BF2CE700794F84 /* YYModel.framework */,
+				36546FE523BF27D500794F84 /* CoreImage.framework */,
+				36546FE323BF27CB00794F84 /* Accelerate.framework */,
+				36546FE123BF27BE00794F84 /* CFNetwork.framework */,
+				36546FDF23BF27B200794F84 /* Security.framework */,
+				36546FDD23BF27A300794F84 /* SystemConfiguration.framework */,
+				36546FDB23BF279600794F84 /* ImageIO.framework */,
+				36546FD923BF278B00794F84 /* UIKit.framework */,
+				36546FD523BF276300794F84 /* AFNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36546FEA23BF2B3A00794F84 /* JCNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				36546FFF23BF2B3A00794F84 /* JCToolKit_Network.h */,
+				36546FF223BF2B3A00794F84 /* Define */,
+				36546FEB23BF2B3A00794F84 /* Products */,
+				36546FF623BF2B3A00794F84 /* Handle */,
+				3654700023BF2B3A00794F84 /* Service */,
+			);
+			name = JCNetwork;
+			path = JCToolKit/Classes/JCNetwork;
+			sourceTree = SOURCE_ROOT;
+		};
+		36546FEB23BF2B3A00794F84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36546FF023BF2B3A00794F84 /* JCRequestObj.h */,
+				36546FEC23BF2B3A00794F84 /* JCRequestObj.m */,
+				36546FED23BF2B3A00794F84 /* JCResponedObj.h */,
+				36546FEF23BF2B3A00794F84 /* JCResponedObj.m */,
+				36546FEE23BF2B3A00794F84 /* JCRequest.h */,
+				36546FF123BF2B3A00794F84 /* JCRequest.m */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		36546FF223BF2B3A00794F84 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				36546FF423BF2B3A00794F84 /* JCNetworkDefine.h */,
+				36546FF323BF2B3A00794F84 /* JCNetworkResponse.h */,
+				36546FF523BF2B3A00794F84 /* JCNetworkResponse.m */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		36546FF623BF2B3A00794F84 /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+				36546FFA23BF2B3A00794F84 /* DispatchElement.m */,
+				36546FFC23BF2B3A00794F84 /* DispatchElement.h */,
+				36546FFD23BF2B3A00794F84 /* JCDispatcher.h */,
+				36546FF923BF2B3A00794F84 /* JCDispatcher.m */,
+				36546FFB23BF2B3A00794F84 /* JCCacheResponedDispatcher.h */,
+				36546FF723BF2B3A00794F84 /* JCCacheResponedDispatcher.m */,
+				36546FFE23BF2B3A00794F84 /* JCRequester.h */,
+				36546FF823BF2B3A00794F84 /* JCRequester.m */,
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		3654700023BF2B3A00794F84 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3654700123BF2B3A00794F84 /* JCRequestProxy.h */,
+				3654700223BF2B3A00794F84 /* JCRequestProxy.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3654700323BF2B3A00794F84 /* JCMediatorProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				3654700423BF2B3A00794F84 /* JCMediatorProtocol.h */,
+				3654700523BF2B3A00794F84 /* JCMediatorProtocol.m */,
+			);
+			name = JCMediatorProtocol;
+			path = JCToolKit/Classes/JCMediatorProtocol;
+			sourceTree = SOURCE_ROOT;
+		};
+		3654700623BF2B3A00794F84 /* JCDefine */ = {
+			isa = PBXGroup;
+			children = (
+				3654700723BF2B3A00794F84 /* JCDefine.h */,
+				3654700823BF2B3A00794F84 /* JCDefine.m */,
+			);
+			name = JCDefine;
+			path = JCToolKit/Classes/JCDefine;
+			sourceTree = SOURCE_ROOT;
+		};
+		3654700923BF2B3A00794F84 /* JCUI */ = {
+			isa = PBXGroup;
+			children = (
+				3654701A23BF2B3A00794F84 /* JCToolKit_UI.h */,
+				3654700A23BF2B3A00794F84 /* Category */,
+				3654701323BF2B3A00794F84 /* JCTagCollectionView */,
+			);
+			name = JCUI;
+			path = JCToolKit/Classes/JCUI;
+			sourceTree = SOURCE_ROOT;
+		};
+		3654700A23BF2B3A00794F84 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3654701123BF2B3A00794F84 /* UIImage+JCExtend.h */,
+				3654700D23BF2B3A00794F84 /* UIImage+JCExtend.m */,
+				3654701023BF2B3A00794F84 /* UIControl+JCExtend.h */,
+				3654700C23BF2B3A00794F84 /* UIControl+JCExtend.m */,
+				3654700F23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.h */,
+				3654700B23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.m */,
+				3654701223BF2B3A00794F84 /* UITabBarItem+JCExtend.h */,
+				3654700E23BF2B3A00794F84 /* UITabBarItem+JCExtend.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3654701323BF2B3A00794F84 /* JCTagCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3654701823BF2B3A00794F84 /* JCTagCollectionView.h */,
+				3654701523BF2B3A00794F84 /* JCTagCollectionView.m */,
+				3654701723BF2B3A00794F84 /* JCCollectionViewFlowLayout.h */,
+				3654701623BF2B3A00794F84 /* JCCollectionViewFlowLayout.m */,
+				3654701923BF2B3A00794F84 /* JCTagCollectionViewCell.h */,
+				3654701423BF2B3A00794F84 /* JCTagCollectionViewCell.m */,
+			);
+			path = JCTagCollectionView;
+			sourceTree = "<group>";
+		};
+		3654701B23BF2B3A00794F84 /* JCRouter */ = {
+			isa = PBXGroup;
+			children = (
+				3654701E23BF2B3A00794F84 /* JCRouter.h */,
+				3654701D23BF2B3A00794F84 /* JCRouter.m */,
+				3654701C23BF2B3A00794F84 /* JCRouterParams.h */,
+				3654701F23BF2B3A00794F84 /* JCRouterParams.m */,
+			);
+			name = JCRouter;
+			path = JCToolKit/Classes/JCRouter;
+			sourceTree = SOURCE_ROOT;
+		};
+		3654702123BF2B3A00794F84 /* JCCore */ = {
+			isa = PBXGroup;
+			children = (
+				3654702223BF2B3A00794F84 /* JCToolKit_Core.h */,
+				3654702323BF2B3A00794F84 /* Category */,
+				3654703023BF2B3A00794F84 /* ExtendClasses */,
+			);
+			name = JCCore;
+			path = JCToolKit/Classes/JCCore;
+			sourceTree = SOURCE_ROOT;
+		};
+		3654702323BF2B3A00794F84 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3654702523BF2B3A00794F84 /* NSObject+JCExtend.h */,
+				3654702B23BF2B3A00794F84 /* NSObject+JCExtend.m */,
+				3654702923BF2B3A00794F84 /* NSData+JCExtend.h */,
+				3654702E23BF2B3A00794F84 /* NSData+JCExtend.m */,
+				3654702823BF2B3A00794F84 /* NSString+JCExtend.h */,
+				3654702F23BF2B3A00794F84 /* NSString+JCExtend.m */,
+				3654702D23BF2B3A00794F84 /* NSArray+JCExtend.h */,
+				3654702723BF2B3A00794F84 /* NSArray+JCExtend.m */,
+				3654702423BF2B3A00794F84 /* NSDictionary+JCExtend.h */,
+				3654702C23BF2B3A00794F84 /* NSDictionary+JCExtend.m */,
+				3654702623BF2B3A00794F84 /* NSTimer+JCExtend.h */,
+				3654702A23BF2B3A00794F84 /* NSTimer+JCExtend.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3654703023BF2B3A00794F84 /* ExtendClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3654703123BF2B3A00794F84 /* CTBlockDescription.m */,
+				3654703223BF2B3A00794F84 /* NSObject+JCAOP.h */,
+				3654703323BF2B3A00794F84 /* JCDeviceInfo.h */,
+				3654703423BF2B3A00794F84 /* CTBlockDescription.h */,
+				3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */,
+				3654703623BF2B3A00794F84 /* JCDeviceInfo.m */,
+			);
+			path = ExtendClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36546FC723BF25F300794F84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3654705C23BF2B3A00794F84 /* JCTagCollectionViewCell.h in Headers */,
+				3654706923BF2B3A00794F84 /* NSData+JCExtend.h in Headers */,
+				3654703923BF2B3A00794F84 /* JCRequest.h in Headers */,
+				3654705D23BF2B3A00794F84 /* JCToolKit_UI.h in Headers */,
+				3654705523BF2B3A00794F84 /* UIImage+JCExtend.h in Headers */,
+				3654705623BF2B3A00794F84 /* UITabBarItem+JCExtend.h in Headers */,
+				3654706323BF2B3A00794F84 /* JCToolKit_Core.h in Headers */,
+				3654704523BF2B3A00794F84 /* DispatchElement.h in Headers */,
+				3654707123BF2B3A00794F84 /* NSObject+JCAOP.h in Headers */,
+				3654706D23BF2B3A00794F84 /* NSArray+JCExtend.h in Headers */,
+				3654706823BF2B3A00794F84 /* NSString+JCExtend.h in Headers */,
+				3654706623BF2B3A00794F84 /* NSTimer+JCExtend.h in Headers */,
+				3654706023BF2B3A00794F84 /* JCRouter.h in Headers */,
+				3654705A23BF2B3A00794F84 /* JCCollectionViewFlowLayout.h in Headers */,
+				3654704923BF2B3A00794F84 /* JCRequestProxy.h in Headers */,
+				3654706423BF2B3A00794F84 /* NSDictionary+JCExtend.h in Headers */,
+				3654703B23BF2B3A00794F84 /* JCRequestObj.h in Headers */,
+				36546FE923BF2B2900794F84 /* JCToolKit-prefix.pch in Headers */,
+				3654706523BF2B3A00794F84 /* NSObject+JCExtend.h in Headers */,
+				3654704723BF2B3A00794F84 /* JCRequester.h in Headers */,
+				3654703D23BF2B3A00794F84 /* JCNetworkResponse.h in Headers */,
+				3654704B23BF2B3A00794F84 /* JCMediatorProtocol.h in Headers */,
+				3654705B23BF2B3A00794F84 /* JCTagCollectionView.h in Headers */,
+				3654703823BF2B3A00794F84 /* JCResponedObj.h in Headers */,
+				3654705423BF2B3A00794F84 /* UIControl+JCExtend.h in Headers */,
+				3654704823BF2B3A00794F84 /* JCToolKit_Network.h in Headers */,
+				3654704623BF2B3A00794F84 /* JCDispatcher.h in Headers */,
+				3654704423BF2B3A00794F84 /* JCCacheResponedDispatcher.h in Headers */,
+				3654704D23BF2B3A00794F84 /* JCDefine.h in Headers */,
+				3654707323BF2B3A00794F84 /* CTBlockDescription.h in Headers */,
+				3654705323BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.h in Headers */,
+				3654705E23BF2B3A00794F84 /* JCRouterParams.h in Headers */,
+				3654703E23BF2B3A00794F84 /* JCNetworkDefine.h in Headers */,
+				3654706223BF2B3A00794F84 /* JCToolKit.h in Headers */,
+				3654707223BF2B3A00794F84 /* JCDeviceInfo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		36546FCB23BF25F300794F84 /* JCToolKit iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36546FD123BF25F300794F84 /* Build configuration list for PBXNativeTarget "JCToolKit iOS" */;
+			buildPhases = (
+				36546FC723BF25F300794F84 /* Headers */,
+				36546FC823BF25F300794F84 /* Sources */,
+				36546FC923BF25F300794F84 /* Frameworks */,
+				36546FCA23BF25F300794F84 /* Resources */,
+				36546FE723BF280D00794F84 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JCToolKit iOS";
+			productName = "JCToolKit iOS";
+			productReference = 36546FCC23BF25F300794F84 /* JCToolKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36546FB323BF25D600794F84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Jam Jia";
+				TargetAttributes = {
+					36546FCB23BF25F300794F84 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 36546FB623BF25D600794F84 /* Build configuration list for PBXProject "JCToolKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36546FB223BF25D600794F84;
+			productRefGroup = 36546FBD23BF25D600794F84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36546FCB23BF25F300794F84 /* JCToolKit iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36546FCA23BF25F300794F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36546FE723BF280D00794F84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/JCToolKit iOS/input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+				"$(SRCROOT)/JCToolKit iOS/output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36546FC823BF25F300794F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3654706723BF2B3A00794F84 /* NSArray+JCExtend.m in Sources */,
+				3654707023BF2B3A00794F84 /* CTBlockDescription.m in Sources */,
+				3654706C23BF2B3A00794F84 /* NSDictionary+JCExtend.m in Sources */,
+				3654704A23BF2B3A00794F84 /* JCRequestProxy.m in Sources */,
+				3654706123BF2B3A00794F84 /* JCRouterParams.m in Sources */,
+				3654705923BF2B3A00794F84 /* JCCollectionViewFlowLayout.m in Sources */,
+				3654703F23BF2B3A00794F84 /* JCNetworkResponse.m in Sources */,
+				3654706A23BF2B3A00794F84 /* NSTimer+JCExtend.m in Sources */,
+				3654705F23BF2B3A00794F84 /* JCRouter.m in Sources */,
+				3654703C23BF2B3A00794F84 /* JCRequest.m in Sources */,
+				3654706B23BF2B3A00794F84 /* NSObject+JCExtend.m in Sources */,
+				3654707423BF2B3A00794F84 /* NSObject+JCAOP.m in Sources */,
+				3654704223BF2B3A00794F84 /* JCDispatcher.m in Sources */,
+				3654705723BF2B3A00794F84 /* JCTagCollectionViewCell.m in Sources */,
+				3654704F23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.m in Sources */,
+				3654703A23BF2B3A00794F84 /* JCResponedObj.m in Sources */,
+				3654703723BF2B3A00794F84 /* JCRequestObj.m in Sources */,
+				3654704023BF2B3A00794F84 /* JCCacheResponedDispatcher.m in Sources */,
+				3654706F23BF2B3A00794F84 /* NSString+JCExtend.m in Sources */,
+				3654705123BF2B3A00794F84 /* UIImage+JCExtend.m in Sources */,
+				3654704323BF2B3A00794F84 /* DispatchElement.m in Sources */,
+				3654704123BF2B3A00794F84 /* JCRequester.m in Sources */,
+				3654706E23BF2B3A00794F84 /* NSData+JCExtend.m in Sources */,
+				3654705823BF2B3A00794F84 /* JCTagCollectionView.m in Sources */,
+				3654705223BF2B3A00794F84 /* UITabBarItem+JCExtend.m in Sources */,
+				3654704E23BF2B3A00794F84 /* JCDefine.m in Sources */,
+				3654705023BF2B3A00794F84 /* UIControl+JCExtend.m in Sources */,
+				3654704C23BF2B3A00794F84 /* JCMediatorProtocol.m in Sources */,
+				3654707523BF2B3A00794F84 /* JCDeviceInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		36546FC223BF25D600794F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36546FC323BF25D600794F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		36546FD223BF25F300794F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JCToolKit iOS/JCToolKit-prefix.pch";
+				INFOPLIST_FILE = "JCToolKit iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-iOS";
+				PRODUCT_NAME = JCToolKit;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36546FD323BF25F300794F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JCToolKit iOS/JCToolKit-prefix.pch";
+				INFOPLIST_FILE = "JCToolKit iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-iOS";
+				PRODUCT_NAME = JCToolKit;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36546FB623BF25D600794F84 /* Build configuration list for PBXProject "JCToolKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36546FC223BF25D600794F84 /* Debug */,
+				36546FC323BF25D600794F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36546FD123BF25F300794F84 /* Build configuration list for PBXNativeTarget "JCToolKit iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36546FD223BF25F300794F84 /* Debug */,
+				36546FD323BF25F300794F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36546FB323BF25D600794F84 /* Project object */;
+}
