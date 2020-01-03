@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/JCToolKit.svg?style=flat)](http://cocoapods.org/pods/JCToolKit)
 [![License](https://img.shields.io/cocoapods/l/JCToolKit.svg?style=flat)](http://cocoapods.org/pods/JCToolKit)
 [![Platform](https://img.shields.io/cocoapods/p/JCToolKit.svg?style=flat)](http://cocoapods.org/pods/JCToolKit)
+![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Example
 
