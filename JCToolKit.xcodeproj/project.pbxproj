@@ -74,8 +74,8 @@
 		3654706E23BF2B3A00794F84 /* NSData+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654702E23BF2B3A00794F84 /* NSData+JCExtend.m */; };
 		3654706F23BF2B3A00794F84 /* NSString+JCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654702F23BF2B3A00794F84 /* NSString+JCExtend.m */; };
 		3654707023BF2B3A00794F84 /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703123BF2B3A00794F84 /* CTBlockDescription.m */; };
-		3654707123BF2B3A00794F84 /* NSObject+JCAOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703223BF2B3A00794F84 /* NSObject+JCAOP.h */; };
-		3654707223BF2B3A00794F84 /* JCDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703323BF2B3A00794F84 /* JCDeviceInfo.h */; };
+		3654707123BF2B3A00794F84 /* NSObject+JCAOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703223BF2B3A00794F84 /* NSObject+JCAOP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3654707223BF2B3A00794F84 /* JCDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703323BF2B3A00794F84 /* JCDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3654707323BF2B3A00794F84 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703423BF2B3A00794F84 /* CTBlockDescription.h */; };
 		3654707423BF2B3A00794F84 /* NSObject+JCAOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */; };
 		3654707523BF2B3A00794F84 /* JCDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703623BF2B3A00794F84 /* JCDeviceInfo.m */; };
@@ -409,11 +409,11 @@
 		3654703023BF2B3A00794F84 /* ExtendClasses */ = {
 			isa = PBXGroup;
 			children = (
+				3654703423BF2B3A00794F84 /* CTBlockDescription.h */,
 				3654703123BF2B3A00794F84 /* CTBlockDescription.m */,
 				3654703223BF2B3A00794F84 /* NSObject+JCAOP.h */,
-				3654703323BF2B3A00794F84 /* JCDeviceInfo.h */,
-				3654703423BF2B3A00794F84 /* CTBlockDescription.h */,
 				3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */,
+				3654703323BF2B3A00794F84 /* JCDeviceInfo.h */,
 				3654703623BF2B3A00794F84 /* JCDeviceInfo.m */,
 			);
 			path = ExtendClasses;
