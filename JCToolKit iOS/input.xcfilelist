@@ -1,5 +1,0 @@
-$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework
-$(SRCROOT)/Carthage/Build/iOS/SAMKeychain.framework
-$(SRCROOT)/Carthage/Build/iOS/YYCache.framework
-$(SRCROOT)/Carthage/Build/iOS/YYModel.framework
-

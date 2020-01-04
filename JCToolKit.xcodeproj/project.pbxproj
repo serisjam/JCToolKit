@@ -475,7 +475,6 @@
 				36546FC823BF25F300794F84 /* Sources */,
 				36546FC923BF25F300794F84 /* Frameworks */,
 				36546FCA23BF25F300794F84 /* Resources */,
-				36546FE723BF280D00794F84 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -527,28 +526,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		36546FE723BF280D00794F84 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/JCToolKit iOS/input.xcfilelist",
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-				"$(SRCROOT)/JCToolKit iOS/output.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36546FC823BF25F300794F84 /* Sources */ = {
