@@ -250,9 +250,9 @@
 			children = (
 				36546FFF23BF2B3A00794F84 /* JCToolKit_Network.h */,
 				36546FF223BF2B3A00794F84 /* Define */,
+				3654700023BF2B3A00794F84 /* Service */,
 				36546FEB23BF2B3A00794F84 /* Products */,
 				36546FF623BF2B3A00794F84 /* Handle */,
-				3654700023BF2B3A00794F84 /* Service */,
 			);
 			name = JCNetwork;
 			path = JCToolKit/Classes/JCNetwork;
@@ -343,10 +343,10 @@
 				3654700D23BF2B3A00794F84 /* UIImage+JCExtend.m */,
 				3654701023BF2B3A00794F84 /* UIControl+JCExtend.h */,
 				3654700C23BF2B3A00794F84 /* UIControl+JCExtend.m */,
-				3654700F23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.h */,
-				3654700B23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.m */,
 				3654701223BF2B3A00794F84 /* UITabBarItem+JCExtend.h */,
 				3654700E23BF2B3A00794F84 /* UITabBarItem+JCExtend.m */,
+				3654700F23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.h */,
+				3654700B23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -394,14 +394,14 @@
 				3654702B23BF2B3A00794F84 /* NSObject+JCExtend.m */,
 				3654702923BF2B3A00794F84 /* NSData+JCExtend.h */,
 				3654702E23BF2B3A00794F84 /* NSData+JCExtend.m */,
+				3654702623BF2B3A00794F84 /* NSTimer+JCExtend.h */,
+				3654702A23BF2B3A00794F84 /* NSTimer+JCExtend.m */,
 				3654702823BF2B3A00794F84 /* NSString+JCExtend.h */,
 				3654702F23BF2B3A00794F84 /* NSString+JCExtend.m */,
 				3654702D23BF2B3A00794F84 /* NSArray+JCExtend.h */,
 				3654702723BF2B3A00794F84 /* NSArray+JCExtend.m */,
 				3654702423BF2B3A00794F84 /* NSDictionary+JCExtend.h */,
 				3654702C23BF2B3A00794F84 /* NSDictionary+JCExtend.m */,
-				3654702623BF2B3A00794F84 /* NSTimer+JCExtend.h */,
-				3654702A23BF2B3A00794F84 /* NSTimer+JCExtend.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -409,10 +409,10 @@
 		3654703023BF2B3A00794F84 /* ExtendClasses */ = {
 			isa = PBXGroup;
 			children = (
-				3654703423BF2B3A00794F84 /* CTBlockDescription.h */,
-				3654703123BF2B3A00794F84 /* CTBlockDescription.m */,
 				3654703223BF2B3A00794F84 /* NSObject+JCAOP.h */,
 				3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */,
+				3654703423BF2B3A00794F84 /* CTBlockDescription.h */,
+				3654703123BF2B3A00794F84 /* CTBlockDescription.m */,
 				3654703323BF2B3A00794F84 /* JCDeviceInfo.h */,
 				3654703623BF2B3A00794F84 /* JCDeviceInfo.m */,
 			);

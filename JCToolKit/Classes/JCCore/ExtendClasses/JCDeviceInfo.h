@@ -6,7 +6,7 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //当前屏幕宽高
 #define jc_ScreenW [UIScreen mainScreen].bounds.size.width
