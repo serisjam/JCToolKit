@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-## Installation
+## Installation with CocoaPods
 
 JCToolKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -20,6 +20,21 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "JCToolKit"
 ```
+
+## Installation with Carthage
+
+To integrate JCToolKit into your Xcode project using Carthage, specify it in your `Cartfile`
+Because of JCToolKit dependent on AFNetworking, YYCache, YYModel and SAMKeychain. So, you must add this to you `Cartfile`:
+
+```ogdl
+github "AFNetworking/AFNetworking" "3.2.1"
+github "ibireme/YYCache" "1.0.4"
+github "ibireme/YYModel" "1.0.4"
+github "soffes/SAMKeychain" "v1.5.3"
+github "SerilesJam/JCToolKit" "1.0.7"
+```
+
+Run `carthage` to build the framework and drag the built `JCToolKit.framework` into your Xcode project.
 
 ## Author
 
