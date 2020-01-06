@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCToolKit'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'JCToolKit快速开发框架'
 
 # This description is used to generate tags and improve search results.
@@ -26,13 +26,22 @@ Pod::Spec.new do |s|
   s.author           = { 'JiaMiao' => 'hxjiamiao@126.com' }
   s.source           = { :git => 'https://github.com/SerilesJam/JCToolKit.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 
-  s.source_files = 'JCToolKit/Classes/*'
+  s.source_files = 'JCToolKit/Classes/JCToolKit.h'
   s.public_header_files = 'JCToolKit/Classes/JCToolKit.h'
 #  s.resource_bundles = {
 #	'JCToolKit' => ['JCToolKit/Assets/**/*.{xib,xcassets,imageset,png,json,storyboard}']
 #  }
+
+  pch_JCToolKit = <<-EOS
+            #import <AFNetworking/AFNetworking.h>
+            #import <AFNetworking/UIKit+AFNetworking.h>
+            #import <YYModel/YYModel.h>
+            #import <YYCache/YYCache.h>
+            #import <SAMKeychain/SAMKeychain.h>
+          EOS
+  s.prefix_header_contents = pch_JCToolKit
 
   s.subspec 'JCDefine' do |ss|
     ss.source_files = 'JCToolKit/Classes/JCDefine/*'
@@ -52,7 +61,9 @@ Pod::Spec.new do |s|
         sss.source_files = 'JCToolKit/Classes/JCCore/ExtendClasses/*'
         sss.public_header_files = 'JCToolKit/Classes/JCCore/ExtendClasses/*.h'
     end
+    
     ss.dependency 'JCToolKit/JCDefine'
+    ss.dependency 'SAMKeychain'
   end
 
   s.subspec 'JCUI' do |ss|
@@ -68,20 +79,13 @@ Pod::Spec.new do |s|
 		sss.source_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/*'
 		sss.public_header_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/JCTagCollectionView.h'
 	end
+  
 	ss.dependency 'JCToolKit/JCCore'
   end
 
   s.subspec 'JCNetwork' do |ss|
 	ss.source_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
 	ss.public_header_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
-	pch_JCToolKit_Network = <<-EOS
-            #import <AFNetworking/AFNetworking.h>
-            #import <AFNetworking/UIKit+AFNetworking.h>
-            #import <SAMKeychain/SAMKeychain.h>
-            #import <YYModel/YYModel.h>
-            #import <YYCache/YYCache.h>
-					EOS
-	ss.prefix_header_contents = pch_JCToolKit_Network
 
 	ss.subspec 'Define' do |sss|
 		sss.source_files = 'JCToolKit/Classes/JCNetwork/Define/*'
@@ -126,6 +130,4 @@ Pod::Spec.new do |s|
   end
 
   s.frameworks = 'UIKit', 'ImageIO', 'CoreImage'
-  s.dependency 'SAMKeychain'
-
 end
