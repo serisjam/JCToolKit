@@ -34,15 +34,6 @@ Pod::Spec.new do |s|
 #	'JCToolKit' => ['JCToolKit/Assets/**/*.{xib,xcassets,imageset,png,json,storyboard}']
 #  }
 
-  pch_JCToolKit = <<-EOS
-            #import <AFNetworking/AFNetworking.h>
-            #import <AFNetworking/UIKit+AFNetworking.h>
-            #import <YYModel/YYModel.h>
-            #import <YYCache/YYCache.h>
-            #import <SAMKeychain/SAMKeychain.h>
-          EOS
-  s.prefix_header_contents = pch_JCToolKit
-
   s.subspec 'JCDefine' do |ss|
     ss.source_files = 'JCToolKit/Classes/JCDefine/*'
     ss.public_header_files = 'JCToolKit/Classes/JCDefine/*.h'
@@ -51,6 +42,10 @@ Pod::Spec.new do |s|
   s.subspec 'JCCore' do |ss|
     ss.source_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
     ss.public_header_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
+    pch_JCToolKit_Core = <<-EOS
+            #import <SAMKeychain/SAMKeychain.h>
+          EOS
+    ss.prefix_header_contents = pch_JCToolKit_Core
 
     ss.subspec 'Category' do |sss|
         sss.source_files = 'JCToolKit/Classes/JCCore/Category/*'
@@ -62,6 +57,7 @@ Pod::Spec.new do |s|
         sss.public_header_files = 'JCToolKit/Classes/JCCore/ExtendClasses/*.h'
     end
     
+    ss.frameworks = 'Security'
     ss.dependency 'JCToolKit/JCDefine'
     ss.dependency 'SAMKeychain'
   end
@@ -86,6 +82,13 @@ Pod::Spec.new do |s|
   s.subspec 'JCNetwork' do |ss|
 	ss.source_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
 	ss.public_header_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
+  pch_JCToolKit_Network = <<-EOS
+          #import <AFNetworking/AFNetworking.h>
+          #import <AFNetworking/UIKit+AFNetworking.h>
+          #import <YYModel/YYModel.h>
+          #import <YYCache/YYCache.h>
+        EOS
+  ss.prefix_header_contents = pch_JCToolKit_Network
 
 	ss.subspec 'Define' do |sss|
 		sss.source_files = 'JCToolKit/Classes/JCNetwork/Define/*'
