@@ -9,7 +9,7 @@
 #import "JCViewController.h"
 #import <JCToolKit/JCToolKit.h>
 
-@interface JCViewController () < CALayerDelegate >
+@interface JCViewController ()
 
 @property (nonatomic, strong) NSString *target;
 
