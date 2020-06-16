@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCToolKit'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'JCToolKit快速开发框架'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.author           = { 'JiaMiao' => 'hxjiamiao@126.com' }
   s.source           = { :git => 'https://github.com/SerilesJam/JCToolKit.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'JCToolKit/Classes/JCToolKit.h'
   s.public_header_files = 'JCToolKit/Classes/JCToolKit.h'
