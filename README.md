@@ -30,11 +30,11 @@ To integrate JCToolKit into your Xcode project using Carthage, specify it in you
 Because of JCToolKit dependent on AFNetworking, YYCache, YYModel and SAMKeychain. So, you must add this to you `Cartfile`:
 
 ```ogdl
-github "AFNetworking/AFNetworking" "3.2.1"
-github "ibireme/YYCache" "1.0.4"
-github "ibireme/YYModel" "1.0.4"
-github "soffes/SAMKeychain" "v1.5.3"
-github "SerilesJam/JCToolKit" "1.0.7"
+github "AFNetworking/AFNetworking"
+github "ibireme/YYCache"
+github "ibireme/YYModel"
+github "soffes/SAMKeychain"
+github "SerilesJam/JCToolKit"
 ```
 
 Run `carthage` to build the framework and drag the built `JCToolKit.framework` into your Xcode project.
