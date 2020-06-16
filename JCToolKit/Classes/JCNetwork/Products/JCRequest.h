@@ -16,7 +16,6 @@
 @property (nonatomic, readonly, strong) NSString *URLString;
 @property (nonatomic, readonly, strong) NSDictionary *paramsDic;
 @property (nonatomic, readonly, strong) NSDictionary *headerFieldDic;
-@property (nonatomic, assign) NSTimeInterval timeoutInterval;
 
 //缓存key
 @property (nonatomic, readonly, strong) NSString *cacheKey;

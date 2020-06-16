@@ -30,7 +30,6 @@ jc_singleton_implementation
 - (void)addGetDispatchItem:(DispatchElement *)item {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [item.request requestSerializer];
-    manager.requestSerializer.timeoutInterval = item.request.timeoutInterval;
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     [self cancelRequest:item.requestID];
@@ -40,7 +39,7 @@ jc_singleton_implementation
     }
     
     __weak typeof(self) weakSelf = self;
-    NSURLSessionDataTask *task = [manager GET:item.request.URLString parameters:item.request.paramsDic progress:nil success:^(NSURLSessionDataTask *task, id responseObject){
+    NSURLSessionDataTask *task = [manager GET:item.request.URLString parameters:item.request.paramsDic headers:item.request.headerFieldDic progress:nil success:^(NSURLSessionDataTask *task, id responseObject){
         [weakSelf requestFinished:responseObject withDispatchElement:item];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [weakSelf requestFailed:error withDispatchElement:item];
@@ -52,7 +51,6 @@ jc_singleton_implementation
 - (void)addPostDispatchItem:(DispatchElement *)item {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [item.request requestSerializer];
-    manager.requestSerializer.timeoutInterval = item.request.timeoutInterval;
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     [self cancelRequest:item.requestID];
@@ -61,7 +59,7 @@ jc_singleton_implementation
         return ;
     }
     __weak typeof(self) weakSelf = self;
-    NSURLSessionDataTask *task = [manager POST:item.request.URLString parameters:item.request.paramsDic progress:nil success:^(NSURLSessionDataTask *task, id responseObject){
+    NSURLSessionDataTask *task = [manager POST:item.request.URLString parameters:item.request.paramsDic headers:item.request.headerFieldDic progress:nil success:^(NSURLSessionDataTask *task, id responseObject){
         [weakSelf requestFinished:responseObject withDispatchElement:item];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [weakSelf requestFailed:error withDispatchElement:item];
@@ -78,7 +76,7 @@ jc_singleton_implementation
     [self cancelRequest:item.requestID];
     
     __weak typeof(self) weakSelf = self;
-    NSURLSessionDataTask *task = [manager POST:item.request.URLString parameters:item.request.paramsDic constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    NSURLSessionDataTask *task = [manager POST:item.request.URLString parameters:item.request.paramsDic headers:item.request.headerFieldDic constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         for (NSString *key in [files allKeys]) {
             [formData appendPartWithFileData:[files objectForKey:key] name:key fileName:key mimeType:@"application/octet-stream"];
         }

@@ -8,6 +8,13 @@
 
 #import "JCRequest.h"
 
+@interface JCRequest ()
+
+@property (nonatomic, readonly, assign) JCNetworkParameterType parameterType;
+@property (nonatomic, readonly, assign) NSTimeInterval timeoutInterval;
+
+@end
+
 @implementation JCRequest
 
 - (instancetype)initWithRequestObj:(JCRequestObj *)requestObj {
@@ -17,7 +24,7 @@
         _paramsDic = [self bulidRequestParamsWithRequest:requestObj];
         _headerFieldDic = requestObj.headerFieldDic;
         _URLString = [self getURLStringWithRequest:requestObj];
-        _requestSerializer = [self getRequestSerializeWithRequest:requestObj];
+        _parameterType = requestObj.parameterType;
         _timeoutInterval = requestObj.timeoutInterval;
         
         if (requestObj.cacheKey) {
@@ -86,9 +93,9 @@
     return urlString;
 }
 
-- (AFHTTPRequestSerializer<AFURLRequestSerialization> *)getRequestSerializeWithRequest:(JCRequestObj *)requestObj {
+- (AFHTTPRequestSerializer<AFURLRequestSerialization> *)requestSerializer {
     AFHTTPRequestSerializer *requestSerializer;
-    switch (requestObj.parameterType) {
+    switch (_parameterType) {
         case JCNetworkParameterTypeURL:
             requestSerializer = [AFHTTPRequestSerializer serializer];
             break;
@@ -102,9 +109,8 @@
             break;
     }
     
-    for (NSString *key in [_headerFieldDic allKeys]) {
-        [requestSerializer setValue:[_headerFieldDic objectForKey:key] forHTTPHeaderField:key];
-    }
+    requestSerializer.timeoutInterval = _timeoutInterval;
+    
     return requestSerializer;
 }
 

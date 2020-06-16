@@ -284,8 +284,8 @@
 		36546FF623BF2B3A00794F84 /* Handle */ = {
 			isa = PBXGroup;
 			children = (
-				36546FFA23BF2B3A00794F84 /* DispatchElement.m */,
 				36546FFC23BF2B3A00794F84 /* DispatchElement.h */,
+				36546FFA23BF2B3A00794F84 /* DispatchElement.m */,
 				36546FFD23BF2B3A00794F84 /* JCDispatcher.h */,
 				36546FF923BF2B3A00794F84 /* JCDispatcher.m */,
 				36546FFB23BF2B3A00794F84 /* JCCacheResponedDispatcher.h */,
