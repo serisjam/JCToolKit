@@ -1,4 +1,4 @@
-github "AFNetworking/AFNetworking"
-github "ibireme/YYCache"
-github "ibireme/YYModel"
-github "soffes/SAMKeychain"
+github "SerilesJam/AFNetworking"
+github "SerilesJam/YYCache"
+github "SerilesJam/YYModel"
+github "SerilesJam/SAMKeychain"

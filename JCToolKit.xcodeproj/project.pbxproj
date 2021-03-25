@@ -73,16 +73,15 @@
 		3654707423BF2B3A00794F84 /* NSObject+JCAOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */; };
 		3654707523BF2B3A00794F84 /* JCDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703623BF2B3A00794F84 /* JCDeviceInfo.m */; };
 		36B2204D260C1EC400A900DF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B2204C260C1EC400A900DF /* CoreServices.framework */; platformFilter = ios; };
-		36BDC19A260C6A2900C0EDDC /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC196260C6A2800C0EDDC /* SAMKeychain.framework */; platformFilter = ios; };
-		36BDC19B260C6A2900C0EDDC /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC197260C6A2800C0EDDC /* YYModel.framework */; platformFilter = ios; };
-		36BDC19C260C6A2900C0EDDC /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC198260C6A2900C0EDDC /* YYCache.framework */; platformFilter = ios; };
-		36BDC19D260C6A2900C0EDDC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC199260C6A2900C0EDDC /* AFNetworking.framework */; platformFilter = ios; };
+		36BDC248260C8AAA00C0EDDC /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC244260C8AAA00C0EDDC /* YYModel.framework */; platformFilter = ios; };
+		36BDC24A260C8AAA00C0EDDC /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */; platformFilter = ios; };
+		36BDC24C260C8AAA00C0EDDC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC246260C8AAA00C0EDDC /* AFNetworking.framework */; platformFilter = ios; };
+		36BDC24E260C8AAA00C0EDDC /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC247260C8AAA00C0EDDC /* YYCache.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36546FCC23BF25F300794F84 /* JCToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36546FCF23BF25F300794F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36546FD523BF276300794F84 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		36546FD923BF278B00794F84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCToolKit-prefix.pch"; sourceTree = "<group>"; };
 		36546FEC23BF2B3A00794F84 /* JCRequestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRequestObj.m; sourceTree = "<group>"; };
@@ -148,14 +147,11 @@
 		3654703423BF2B3A00794F84 /* CTBlockDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
 		3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JCAOP.m"; sourceTree = "<group>"; };
 		3654703623BF2B3A00794F84 /* JCDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDeviceInfo.m; sourceTree = "<group>"; };
-		3654707623BF2CE700794F84 /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/YYModel.framework; sourceTree = "<group>"; };
-		3654707723BF2CE800794F84 /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYCache.framework; path = Carthage/Build/iOS/YYCache.framework; sourceTree = "<group>"; };
-		3654707923BF2CE800794F84 /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/SAMKeychain.framework; sourceTree = "<group>"; };
 		36B2204C260C1EC400A900DF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		36BDC196260C6A2800C0EDDC /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/Static/SAMKeychain.framework; sourceTree = "<group>"; };
-		36BDC197260C6A2800C0EDDC /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/Static/YYModel.framework; sourceTree = "<group>"; };
-		36BDC198260C6A2900C0EDDC /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYCache.framework; path = Carthage/Build/iOS/Static/YYCache.framework; sourceTree = "<group>"; };
-		36BDC199260C6A2900C0EDDC /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/Static/AFNetworking.framework; sourceTree = "<group>"; };
+		36BDC244260C8AAA00C0EDDC /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/Static/YYModel.framework; sourceTree = "<group>"; };
+		36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/Static/SAMKeychain.framework; sourceTree = "<group>"; };
+		36BDC246260C8AAA00C0EDDC /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/Static/AFNetworking.framework; sourceTree = "<group>"; };
+		36BDC247260C8AAA00C0EDDC /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYCache.framework; path = Carthage/Build/iOS/Static/YYCache.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +159,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BDC19A260C6A2900C0EDDC /* SAMKeychain.framework in Frameworks */,
-				36BDC19B260C6A2900C0EDDC /* YYModel.framework in Frameworks */,
-				36BDC19C260C6A2900C0EDDC /* YYCache.framework in Frameworks */,
-				36BDC19D260C6A2900C0EDDC /* AFNetworking.framework in Frameworks */,
 				36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */,
+				36BDC24C260C8AAA00C0EDDC /* AFNetworking.framework in Frameworks */,
 				36B2204D260C1EC400A900DF /* CoreServices.framework in Frameworks */,
+				36BDC24E260C8AAA00C0EDDC /* YYCache.framework in Frameworks */,
+				36BDC24A260C8AAA00C0EDDC /* SAMKeychain.framework in Frameworks */,
+				36BDC248260C8AAA00C0EDDC /* YYModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,16 +207,12 @@
 		36546FD423BF276100794F84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				36BDC199260C6A2900C0EDDC /* AFNetworking.framework */,
-				36BDC196260C6A2800C0EDDC /* SAMKeychain.framework */,
-				36BDC198260C6A2900C0EDDC /* YYCache.framework */,
-				36BDC197260C6A2800C0EDDC /* YYModel.framework */,
+				36BDC246260C8AAA00C0EDDC /* AFNetworking.framework */,
+				36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */,
+				36BDC247260C8AAA00C0EDDC /* YYCache.framework */,
+				36BDC244260C8AAA00C0EDDC /* YYModel.framework */,
 				36B2204C260C1EC400A900DF /* CoreServices.framework */,
-				3654707923BF2CE800794F84 /* SAMKeychain.framework */,
-				3654707723BF2CE800794F84 /* YYCache.framework */,
-				3654707623BF2CE700794F84 /* YYModel.framework */,
 				36546FD923BF278B00794F84 /* UIKit.framework */,
-				36546FD523BF276300794F84 /* AFNetworking.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
