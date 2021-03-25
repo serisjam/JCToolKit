@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36546FD623BF276300794F84 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FD523BF276300794F84 /* AFNetworking.framework */; platformFilter = ios; };
 		36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FD923BF278B00794F84 /* UIKit.framework */; platformFilter = ios; };
-		36546FDC23BF279600794F84 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FDB23BF279600794F84 /* ImageIO.framework */; platformFilter = ios; };
-		36546FDE23BF27A300794F84 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FDD23BF27A300794F84 /* SystemConfiguration.framework */; };
-		36546FE023BF27B200794F84 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FDF23BF27B200794F84 /* Security.framework */; platformFilter = ios; };
-		36546FE223BF27BE00794F84 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FE123BF27BE00794F84 /* CFNetwork.framework */; platformFilter = ios; };
-		36546FE423BF27CB00794F84 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FE323BF27CB00794F84 /* Accelerate.framework */; platformFilter = ios; };
-		36546FE623BF27D500794F84 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FE523BF27D500794F84 /* CoreImage.framework */; platformFilter = ios; };
 		36546FE923BF2B2900794F84 /* JCToolKit-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */; };
 		3654703723BF2B3A00794F84 /* JCRequestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FEC23BF2B3A00794F84 /* JCRequestObj.m */; };
 		3654703823BF2B3A00794F84 /* JCResponedObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 36546FED23BF2B3A00794F84 /* JCResponedObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,11 +72,11 @@
 		3654707323BF2B3A00794F84 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703423BF2B3A00794F84 /* CTBlockDescription.h */; };
 		3654707423BF2B3A00794F84 /* NSObject+JCAOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */; };
 		3654707523BF2B3A00794F84 /* JCDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703623BF2B3A00794F84 /* JCDeviceInfo.m */; };
-		3654707A23BF2CE800794F84 /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654707623BF2CE700794F84 /* YYModel.framework */; platformFilter = ios; };
-		3654707C23BF2CE800794F84 /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654707723BF2CE800794F84 /* YYCache.framework */; platformFilter = ios; };
-		3654708023BF2CE800794F84 /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654707923BF2CE800794F84 /* SAMKeychain.framework */; platformFilter = ios; };
-		3654708623BF2EF000794F84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654708523BF2EF000794F84 /* CoreGraphics.framework */; };
-		36B2204D260C1EC400A900DF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B2204C260C1EC400A900DF /* CoreServices.framework */; };
+		36B2204D260C1EC400A900DF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B2204C260C1EC400A900DF /* CoreServices.framework */; platformFilter = ios; };
+		36BDC19A260C6A2900C0EDDC /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC196260C6A2800C0EDDC /* SAMKeychain.framework */; platformFilter = ios; };
+		36BDC19B260C6A2900C0EDDC /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC197260C6A2800C0EDDC /* YYModel.framework */; platformFilter = ios; };
+		36BDC19C260C6A2900C0EDDC /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC198260C6A2900C0EDDC /* YYCache.framework */; platformFilter = ios; };
+		36BDC19D260C6A2900C0EDDC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC199260C6A2900C0EDDC /* AFNetworking.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,12 +84,6 @@
 		36546FCF23BF25F300794F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36546FD523BF276300794F84 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		36546FD923BF278B00794F84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		36546FDB23BF279600794F84 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		36546FDD23BF27A300794F84 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		36546FDF23BF27B200794F84 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		36546FE123BF27BE00794F84 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		36546FE323BF27CB00794F84 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		36546FE523BF27D500794F84 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCToolKit-prefix.pch"; sourceTree = "<group>"; };
 		36546FEC23BF2B3A00794F84 /* JCRequestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRequestObj.m; sourceTree = "<group>"; };
 		36546FED23BF2B3A00794F84 /* JCResponedObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCResponedObj.h; sourceTree = "<group>"; };
@@ -164,8 +151,11 @@
 		3654707623BF2CE700794F84 /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/YYModel.framework; sourceTree = "<group>"; };
 		3654707723BF2CE800794F84 /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYCache.framework; path = Carthage/Build/iOS/YYCache.framework; sourceTree = "<group>"; };
 		3654707923BF2CE800794F84 /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/SAMKeychain.framework; sourceTree = "<group>"; };
-		3654708523BF2EF000794F84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		36B2204C260C1EC400A900DF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		36BDC196260C6A2800C0EDDC /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/Static/SAMKeychain.framework; sourceTree = "<group>"; };
+		36BDC197260C6A2800C0EDDC /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/Static/YYModel.framework; sourceTree = "<group>"; };
+		36BDC198260C6A2900C0EDDC /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYCache.framework; path = Carthage/Build/iOS/Static/YYCache.framework; sourceTree = "<group>"; };
+		36BDC199260C6A2900C0EDDC /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/Static/AFNetworking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,19 +163,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3654708623BF2EF000794F84 /* CoreGraphics.framework in Frameworks */,
-				36546FE223BF27BE00794F84 /* CFNetwork.framework in Frameworks */,
-				36546FE423BF27CB00794F84 /* Accelerate.framework in Frameworks */,
-				36546FD623BF276300794F84 /* AFNetworking.framework in Frameworks */,
-				3654707C23BF2CE800794F84 /* YYCache.framework in Frameworks */,
-				36546FE623BF27D500794F84 /* CoreImage.framework in Frameworks */,
-				36546FE023BF27B200794F84 /* Security.framework in Frameworks */,
-				3654707A23BF2CE800794F84 /* YYModel.framework in Frameworks */,
+				36BDC19A260C6A2900C0EDDC /* SAMKeychain.framework in Frameworks */,
+				36BDC19B260C6A2900C0EDDC /* YYModel.framework in Frameworks */,
+				36BDC19C260C6A2900C0EDDC /* YYCache.framework in Frameworks */,
+				36BDC19D260C6A2900C0EDDC /* AFNetworking.framework in Frameworks */,
 				36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */,
-				36546FDE23BF27A300794F84 /* SystemConfiguration.framework in Frameworks */,
-				3654708023BF2CE800794F84 /* SAMKeychain.framework in Frameworks */,
 				36B2204D260C1EC400A900DF /* CoreServices.framework in Frameworks */,
-				36546FDC23BF279600794F84 /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,17 +211,14 @@
 		36546FD423BF276100794F84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36BDC199260C6A2900C0EDDC /* AFNetworking.framework */,
+				36BDC196260C6A2800C0EDDC /* SAMKeychain.framework */,
+				36BDC198260C6A2900C0EDDC /* YYCache.framework */,
+				36BDC197260C6A2800C0EDDC /* YYModel.framework */,
 				36B2204C260C1EC400A900DF /* CoreServices.framework */,
-				3654708523BF2EF000794F84 /* CoreGraphics.framework */,
 				3654707923BF2CE800794F84 /* SAMKeychain.framework */,
 				3654707723BF2CE800794F84 /* YYCache.framework */,
 				3654707623BF2CE700794F84 /* YYModel.framework */,
-				36546FE523BF27D500794F84 /* CoreImage.framework */,
-				36546FE323BF27CB00794F84 /* Accelerate.framework */,
-				36546FE123BF27BE00794F84 /* CFNetwork.framework */,
-				36546FDF23BF27B200794F84 /* Security.framework */,
-				36546FDD23BF27A300794F84 /* SystemConfiguration.framework */,
-				36546FDB23BF279600794F84 /* ImageIO.framework */,
 				36546FD923BF278B00794F84 /* UIKit.framework */,
 				36546FD523BF276300794F84 /* AFNetworking.framework */,
 			);
@@ -694,6 +674,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JCToolKit iOS/JCToolKit-prefix.pch";
 				INFOPLIST_FILE = "JCToolKit iOS/Info.plist";
@@ -703,7 +684,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-iOS";
 				PRODUCT_NAME = JCToolKit;
@@ -723,6 +704,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JCToolKit iOS/JCToolKit-prefix.pch";
 				INFOPLIST_FILE = "JCToolKit iOS/Info.plist";
@@ -732,7 +714,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-iOS";
 				PRODUCT_NAME = JCToolKit;
