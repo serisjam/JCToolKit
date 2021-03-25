@@ -50,6 +50,27 @@
 	NSLog(@"viewwillappear");
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    [self jcNetworkRequest];
+}
+
+- (void)jcNetworkRequest
+{
+    JCRequestObj *requestObj = [[JCRequestObj alloc] init];
+    requestObj.hostName = @"https://httpbin.org";
+    requestObj.path = @"get";
+    requestObj.paramsDic = @{@"text":@"content type ios"};
+
+    [[JCRequestProxy sharedInstance] httpGetWithRequest:requestObj entityClass:nil withCompleteBlock:^(JCNetworkResponse *response) {
+        if (response.status == JCNetworkResponseStatusSuccess) {
+            NSLog(@"%@", response.content);
+        }
+    }];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

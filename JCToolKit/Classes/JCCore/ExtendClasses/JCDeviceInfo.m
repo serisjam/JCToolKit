@@ -74,7 +74,7 @@
         assert(uuid != NULL);
         CFStringRef uuidStr = CFUUIDCreateString(NULL, uuid);
         retrieveuuid = [NSString stringWithFormat:@"%@", uuidStr];
-        [SAMKeychain setPassword: retrieveuuid forService:[self getBundleIdentifier] account:@"uuid"];
+        [SAMKeychain setPassword:retrieveuuid forService:[self getBundleIdentifier] account:@"uuid"];
     }
     return retrieveuuid;
 }

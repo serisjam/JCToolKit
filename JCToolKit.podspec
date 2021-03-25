@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCToolKit'
-  s.version          = '1.0.9'
+  s.version          = '1.1.0'
   s.summary          = 'JCToolKit快速开发框架'
 
 # This description is used to generate tags and improve search results.
@@ -113,7 +113,7 @@ Pod::Spec.new do |s|
 		sss.dependency 'JCToolKit/JCNetwork/Handle'
 	end
 
-	ss.frameworks = 'Security', 'MobileCoreServices', 'CoreGraphics', 'SystemConfiguration'
+	ss.frameworks = 'Security', 'CoreServices', 'CoreGraphics', 'SystemConfiguration'
 	ss.dependency 'JCToolKit/JCCore'
 	ss.dependency 'AFNetworking'
 	ss.dependency 'YYModel'

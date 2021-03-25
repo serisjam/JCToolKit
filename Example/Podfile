@@ -1,6 +1,8 @@
-use_frameworks!
+platform :ios, '9.0'
 
 target 'JCToolKit_Example' do
+
+  use_frameworks! :linkage => :static
   pod 'JCToolKit', :path => '../'
 
   target 'JCToolKit_Tests' do
