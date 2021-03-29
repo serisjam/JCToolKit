@@ -43,12 +43,10 @@
     _titleLabel.font = [UIFont systemFontOfSize:14.0f];
     _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.contentView addSubview:_titleLabel];
-    
-    NSArray *constraint_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_titleLabel]|" options:0 metrics:0 views:NSDictionaryOfVariableBindings(_titleLabel)];
-    NSArray *constraint_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_titleLabel]|" options:0 metrics:0 views:NSDictionaryOfVariableBindings(_titleLabel)];
-    
-    [self.contentView addConstraints:constraint_H];
-    [self.contentView addConstraints:constraint_V];
+
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.contentView);
+    }];
 }
 
 - (void)prepareForReuse {

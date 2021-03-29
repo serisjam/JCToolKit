@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCToolKit'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'JCToolKit快速开发框架'
 
 # This description is used to generate tags and improve search results.
@@ -43,8 +43,8 @@ Pod::Spec.new do |s|
     ss.source_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
     ss.public_header_files = 'JCToolKit/Classes/JCCore/JCToolKit_Core.h'
     pch_JCToolKit_Core = <<-EOS
-            #import <SAMKeychain/SAMKeychain.h>
-          EOS
+                           #import <SAMKeychain/SAMKeychain.h>
+                         EOS
     ss.prefix_header_contents = pch_JCToolKit_Core
 
     ss.subspec 'Category' do |sss|
@@ -65,6 +65,10 @@ Pod::Spec.new do |s|
   s.subspec 'JCUI' do |ss|
 	ss.source_files = 'JCToolKit/Classes/JCUI/JCToolKit_UI.h'
 	ss.public_header_files = 'JCToolKit/Classes/JCUI/JCToolKit_UI.h'
+    pch_JCToolKit_UI = <<-EOS
+                         #import <Masonry/Masonry.h>
+                       EOS
+    ss.prefix_header_contents = pch_JCToolKit_UI
 
 	ss.subspec 'Category' do |sss|
 		sss.source_files = 'JCToolKit/Classes/JCUI/Category/*'
@@ -77,17 +81,18 @@ Pod::Spec.new do |s|
 	end
   
 	ss.dependency 'JCToolKit/JCCore'
+    ss.dependency 'Masonry'
   end
 
   s.subspec 'JCNetwork' do |ss|
 	ss.source_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
 	ss.public_header_files = 'JCToolKit/Classes/JCNetwork/JCToolKit_Network.h'
-  pch_JCToolKit_Network = <<-EOS
-          #import <AFNetworking/AFNetworking.h>
-          #import <AFNetworking/UIKit+AFNetworking.h>
-          #import <YYModel/YYModel.h>
-          #import <YYCache/YYCache.h>
-        EOS
+    pch_JCToolKit_Network = <<-EOS
+                              #import <AFNetworking/AFNetworking.h>
+                              #import <AFNetworking/UIKit+AFNetworking.h>
+                              #import <YYModel/YYModel.h>
+                              #import <YYCache/YYCache.h>
+                            EOS
   ss.prefix_header_contents = pch_JCToolKit_Network
 
 	ss.subspec 'Define' do |sss|

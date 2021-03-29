@@ -33,5 +33,4 @@ Carthage
 #
 # Pods/
 Example/Pods
-*.lock
 contents.xcworkspacedata

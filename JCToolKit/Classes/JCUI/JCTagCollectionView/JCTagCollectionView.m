@@ -62,12 +62,10 @@ static NSString * const reuseIdentifier = @"tagCollectionViewCell";
     [self.collectionView setBackgroundColor:[UIColor clearColor]];
 
     [self addSubview:self.collectionView];
-    
-    NSArray *constraint_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_collectionView]|" options:0 metrics:0 views:NSDictionaryOfVariableBindings(_collectionView)];
-    NSArray *constraint_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_collectionView]|" options:0 metrics:0 views:NSDictionaryOfVariableBindings(_collectionView)];
-    
-    [self addConstraints:constraint_H];
-    [self addConstraints:constraint_V];
+
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
 }
 
 #pragma mark UICollectionViewDataSource

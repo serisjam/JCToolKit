@@ -41,6 +41,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    [self testForTagView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -69,6 +71,15 @@
             NSLog(@"%@", response.content);
         }
     }];
+}
+
+- (void)testForTagView
+{
+    JCTagCollectionView *tagView = [[JCTagCollectionView alloc] initWithFrame:CGRectMake(0, 120, 320, 80)];
+    [tagView setBackgroundColor:[UIColor cyanColor]];
+    tagView.tags = @[@"标签1", @"标签2", @"苏州", @"乌鲁木齐市", @"美国加利福利亚州"];
+
+    [self.view addSubview:tagView];
 }
 
 - (void)didReceiveMemoryWarning
