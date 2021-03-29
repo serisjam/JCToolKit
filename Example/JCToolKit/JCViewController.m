@@ -9,6 +9,10 @@
 #import "JCViewController.h"
 #import <JCToolKit/JCToolKit.h>
 
+#if __has_include(<Masonry/Masonry.h>)
+#import <Masonry/Masonry.h>
+#endif
+
 @interface JCViewController ()
 
 @property (nonatomic, strong) NSString *target;
