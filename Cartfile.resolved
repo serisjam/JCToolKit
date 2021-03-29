@@ -1,4 +1,5 @@
 github "SerilesJam/AFNetworking" "4.0.2"
+github "SerilesJam/Masonry" "v1.1.1"
 github "SerilesJam/SAMKeychain" "v1.5.4"
 github "SerilesJam/YYCache" "1.0.5"
 github "SerilesJam/YYModel" "1.0.5"

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36030BCD261172BC00FEBA97 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36030BCC261172BC00FEBA97 /* Masonry.framework */; platformFilter = ios; };
+		36030BE42611737100FEBA97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36030BE32611737100FEBA97 /* Images.xcassets */; };
+		36030BFC261173FF00FEBA97 /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36030BF8261173FE00FEBA97 /* JCAppDelegate.m */; };
+		36030BFD261173FF00FEBA97 /* JCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36030BFB261173FF00FEBA97 /* JCViewController.m */; };
+		36030C032611741000FEBA97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36030C022611741000FEBA97 /* main.m */; };
+		36030C12261175D100FEBA97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36030C11261175D100FEBA97 /* Main.storyboard */; };
+		36030C16261175D900FEBA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36030C15261175D900FEBA97 /* LaunchScreen.storyboard */; };
+		36030D802611C41100FEBA97 /* JCToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FCC23BF25F300794F84 /* JCToolKit.framework */; };
+		36030D812611C41100FEBA97 /* JCToolKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FCC23BF25F300794F84 /* JCToolKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FD923BF278B00794F84 /* UIKit.framework */; platformFilter = ios; };
 		36546FE923BF2B2900794F84 /* JCToolKit-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */; };
 		3654703723BF2B3A00794F84 /* JCRequestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FEC23BF2B3A00794F84 /* JCRequestObj.m */; };
@@ -79,7 +88,42 @@
 		36BDC24E260C8AAA00C0EDDC /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC247260C8AAA00C0EDDC /* YYCache.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		36030C082611751000FEBA97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36546FB323BF25D600794F84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36546FCB23BF25F300794F84;
+			remoteInfo = "JCToolKit iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36030D822611C41100FEBA97 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				36030D812611C41100FEBA97 /* JCToolKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		36030BCC261172BC00FEBA97 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Static/Masonry.framework; sourceTree = "<group>"; };
+		36030BD52611736F00FEBA97 /* JCToolKit Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JCToolKit Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36030BE32611737100FEBA97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Example/JCToolKit/Images.xcassets; sourceTree = "<group>"; };
+		36030BE82611737100FEBA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36030BF8261173FE00FEBA97 /* JCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCAppDelegate.m; path = Example/JCToolKit/JCAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		36030BF9261173FE00FEBA97 /* JCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCViewController.h; path = Example/JCToolKit/JCViewController.h; sourceTree = SOURCE_ROOT; };
+		36030BFA261173FE00FEBA97 /* JCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCAppDelegate.h; path = Example/JCToolKit/JCAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		36030BFB261173FF00FEBA97 /* JCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCViewController.m; path = Example/JCToolKit/JCViewController.m; sourceTree = SOURCE_ROOT; };
+		36030C022611741000FEBA97 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Example/JCToolKit/main.m; sourceTree = SOURCE_ROOT; };
+		36030C11261175D100FEBA97 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Example/JCToolKit/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		36030C15261175D900FEBA97 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Example/JCToolKit/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		36546FCC23BF25F300794F84 /* JCToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36546FCF23BF25F300794F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36546FD923BF278B00794F84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -155,10 +199,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		36030BD22611736F00FEBA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36030D802611C41100FEBA97 /* JCToolKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36546FC923BF25F300794F84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36030BCD261172BC00FEBA97 /* Masonry.framework in Frameworks */,
 				36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */,
 				36BDC24C260C8AAA00C0EDDC /* AFNetworking.framework in Frameworks */,
 				36B2204D260C1EC400A900DF /* CoreServices.framework in Frameworks */,
@@ -171,9 +224,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36030BD62611736F00FEBA97 /* JCToolKit Example */ = {
+			isa = PBXGroup;
+			children = (
+				36030BFA261173FE00FEBA97 /* JCAppDelegate.h */,
+				36030BF8261173FE00FEBA97 /* JCAppDelegate.m */,
+				36030BF9261173FE00FEBA97 /* JCViewController.h */,
+				36030BFB261173FF00FEBA97 /* JCViewController.m */,
+				36030C11261175D100FEBA97 /* Main.storyboard */,
+				36030BE32611737100FEBA97 /* Images.xcassets */,
+				36030C15261175D900FEBA97 /* LaunchScreen.storyboard */,
+				36030BE82611737100FEBA97 /* Info.plist */,
+				36030C022611741000FEBA97 /* main.m */,
+			);
+			path = "JCToolKit Example";
+			sourceTree = "<group>";
+		};
 		36546FB223BF25D600794F84 = {
 			isa = PBXGroup;
 			children = (
+				36030BD62611736F00FEBA97 /* JCToolKit Example */,
 				36546FCD23BF25F300794F84 /* JCToolKit iOS */,
 				36546FBD23BF25D600794F84 /* Products */,
 				36546FD423BF276100794F84 /* Frameworks */,
@@ -184,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				36546FCC23BF25F300794F84 /* JCToolKit.framework */,
+				36030BD52611736F00FEBA97 /* JCToolKit Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +278,7 @@
 		36546FD423BF276100794F84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36030BCC261172BC00FEBA97 /* Masonry.framework */,
 				36BDC246260C8AAA00C0EDDC /* AFNetworking.framework */,
 				36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */,
 				36BDC247260C8AAA00C0EDDC /* YYCache.framework */,
@@ -439,6 +511,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		36030BD42611736F00FEBA97 /* JCToolKit Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36030BEB2611737100FEBA97 /* Build configuration list for PBXNativeTarget "JCToolKit Example" */;
+			buildPhases = (
+				36030BD12611736F00FEBA97 /* Sources */,
+				36030BD22611736F00FEBA97 /* Frameworks */,
+				36030BD32611736F00FEBA97 /* Resources */,
+				36030D822611C41100FEBA97 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36030C092611751000FEBA97 /* PBXTargetDependency */,
+			);
+			name = "JCToolKit Example";
+			productName = "JCToolKit Example";
+			productReference = 36030BD52611736F00FEBA97 /* JCToolKit Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		36546FCB23BF25F300794F84 /* JCToolKit iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36546FD123BF25F300794F84 /* Build configuration list for PBXNativeTarget "JCToolKit iOS" */;
@@ -466,6 +557,9 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Jam Jia";
 				TargetAttributes = {
+					36030BD42611736F00FEBA97 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					36546FCB23BF25F300794F84 = {
 						CreatedOnToolsVersion = 11.2;
 					};
@@ -484,12 +578,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				36030BD42611736F00FEBA97 /* JCToolKit Example */,
 				36546FCB23BF25F300794F84 /* JCToolKit iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		36030BD32611736F00FEBA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36030C16261175D900FEBA97 /* LaunchScreen.storyboard in Resources */,
+				36030BE42611737100FEBA97 /* Images.xcassets in Resources */,
+				36030C12261175D100FEBA97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36546FCA23BF25F300794F84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,6 +605,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		36030BD12611736F00FEBA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36030BFD261173FF00FEBA97 /* JCViewController.m in Sources */,
+				36030C032611741000FEBA97 /* main.m in Sources */,
+				36030BFC261173FF00FEBA97 /* JCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36546FC823BF25F300794F84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,7 +653,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		36030C092611751000FEBA97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36546FCB23BF25F300794F84 /* JCToolKit iOS */;
+			targetProxy = 36030C082611751000FEBA97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		36030BEC2611737100FEBA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TVSQH639C;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "JCToolKit Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		36030BED2611737100FEBA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TVSQH639C;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "JCToolKit Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		36546FC223BF25D600794F84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -665,7 +832,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JCToolKit iOS/JCToolKit-prefix.pch";
@@ -678,6 +844,7 @@
 				);
 				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0.7;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-iOS";
 				PRODUCT_NAME = JCToolKit;
 				SKIP_INSTALL = YES;
@@ -695,7 +862,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JCToolKit iOS/JCToolKit-prefix.pch";
@@ -708,6 +874,7 @@
 				);
 				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0.7;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-iOS";
 				PRODUCT_NAME = JCToolKit;
 				SKIP_INSTALL = YES;
@@ -718,6 +885,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		36030BEB2611737100FEBA97 /* Build configuration list for PBXNativeTarget "JCToolKit Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36030BEC2611737100FEBA97 /* Debug */,
+				36030BED2611737100FEBA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		36546FB623BF25D600794F84 /* Build configuration list for PBXProject "JCToolKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
