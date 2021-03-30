@@ -30,9 +30,10 @@ Pod::Spec.new do |s|
 
   s.source_files = 'JCToolKit/Classes/JCToolKit.h'
   s.public_header_files = 'JCToolKit/Classes/JCToolKit.h'
-#  s.resource_bundles = {
-#	'JCToolKit' => ['JCToolKit/Assets/**/*.{xib,xcassets,imageset,png,json,storyboard}']
-#  }
+  
+  s.resource_bundles = {
+    'JCToolKit' => ['JCToolKit/Assets/*.{xib,xcassets,imageset,png,json,storyboard}']
+  }
 
   s.subspec 'JCDefine' do |ss|
     ss.source_files = 'JCToolKit/Classes/JCDefine/*'
@@ -70,17 +71,22 @@ Pod::Spec.new do |s|
                        EOS
     ss.prefix_header_contents = pch_JCToolKit_UI
 
-	ss.subspec 'Category' do |sss|
-		sss.source_files = 'JCToolKit/Classes/JCUI/Category/*'
-		sss.public_header_files = 'JCToolKit/Classes/JCUI/Category/*.h'
-	end
+    ss.subspec 'Category' do |sss|
+      sss.source_files = 'JCToolKit/Classes/JCUI/Category/*'
+      sss.public_header_files = 'JCToolKit/Classes/JCUI/Category/*.h'
+    end
 
-	ss.subspec 'JCTagCollectionView' do |sss|
-		sss.source_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/*'
-		sss.public_header_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/JCTagCollectionView.h'
-	end
+    ss.subspec 'JCTagCollectionView' do |sss|
+      sss.source_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/*'
+      sss.public_header_files = 'JCToolKit/Classes/JCUI/JCTagCollectionView/JCTagCollectionView.h'
+    end
+    
+    ss.subspec 'JCNavigationController' do |sss|
+        sss.source_files = 'JCToolKit/Classes/JCUI/JCNavigationController/*'
+        sss.public_header_files = 'JCToolKit/Classes/JCUI/JCNavigationController/JCNavigationController.h'
+    end
   
-	ss.dependency 'JCToolKit/JCCore'
+    ss.dependency 'JCToolKit/JCCore'
     ss.dependency 'Masonry'
   end
 
@@ -95,34 +101,34 @@ Pod::Spec.new do |s|
                             EOS
   ss.prefix_header_contents = pch_JCToolKit_Network
 
-	ss.subspec 'Define' do |sss|
-		sss.source_files = 'JCToolKit/Classes/JCNetwork/Define/*'
-		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Define/*.h'
-	end
+    ss.subspec 'Define' do |sss|
+      sss.source_files = 'JCToolKit/Classes/JCNetwork/Define/*'
+      sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Define/*.h'
+    end
 
-	ss.subspec 'Products' do |sss|
-		sss.source_files = 'JCToolKit/Classes/JCNetwork/Products/*'
-		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Products/JC{Request,Responed}Obj.h'
-		sss.dependency 'JCToolKit/JCNetwork/Define'
-	end
+    ss.subspec 'Products' do |sss|
+      sss.source_files = 'JCToolKit/Classes/JCNetwork/Products/*'
+      sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Products/JC{Request,Responed}Obj.h'
+      sss.dependency 'JCToolKit/JCNetwork/Define'
+    end
 
-	ss.subspec 'Handle' do |sss|
-		sss.source_files = 'JCToolKit/Classes/JCNetwork/Handle/*'
-		sss.private_header_files = 'JCToolKit/Classes/JCNetwork/Handle/*.h'
-		sss.dependency 'JCToolKit/JCNetwork/Products'
-	end
+    ss.subspec 'Handle' do |sss|
+      sss.source_files = 'JCToolKit/Classes/JCNetwork/Handle/*'
+      sss.private_header_files = 'JCToolKit/Classes/JCNetwork/Handle/*.h'
+      sss.dependency 'JCToolKit/JCNetwork/Products'
+    end
 
-	ss.subspec 'Service' do |sss|
-		sss.source_files = 'JCToolKit/Classes/JCNetwork/Service/*'
-		sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Service/JCRequestProxy.h'
-		sss.dependency 'JCToolKit/JCNetwork/Handle'
-	end
+    ss.subspec 'Service' do |sss|
+      sss.source_files = 'JCToolKit/Classes/JCNetwork/Service/*'
+      sss.public_header_files = 'JCToolKit/Classes/JCNetwork/Service/JCRequestProxy.h'
+      sss.dependency 'JCToolKit/JCNetwork/Handle'
+    end
 
-	ss.frameworks = 'Security', 'CoreServices', 'CoreGraphics', 'SystemConfiguration'
-	ss.dependency 'JCToolKit/JCCore'
-	ss.dependency 'AFNetworking'
-	ss.dependency 'YYModel'
-	ss.dependency 'YYCache'
+    ss.frameworks = 'Security', 'CoreServices', 'CoreGraphics', 'SystemConfiguration'
+    ss.dependency 'JCToolKit/JCCore'
+    ss.dependency 'AFNetworking'
+    ss.dependency 'YYModel'
+    ss.dependency 'YYCache'
   end
 
   s.subspec 'JCRouter' do |ss|

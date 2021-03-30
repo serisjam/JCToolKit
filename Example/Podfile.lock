@@ -72,9 +72,13 @@ PODS:
   - JCToolKit/JCUI (1.1.1):
     - JCToolKit/JCCore
     - JCToolKit/JCUI/Category (= 1.1.1)
+    - JCToolKit/JCUI/JCNavigationController (= 1.1.1)
     - JCToolKit/JCUI/JCTagCollectionView (= 1.1.1)
     - Masonry
   - JCToolKit/JCUI/Category (1.1.1):
+    - JCToolKit/JCCore
+    - Masonry
+  - JCToolKit/JCUI/JCNavigationController (1.1.1):
     - JCToolKit/JCCore
     - Masonry
   - JCToolKit/JCUI/JCTagCollectionView (1.1.1):
@@ -102,7 +106,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  JCToolKit: a26249e52f66fb41532dad2edab6d67cdb27687c
+  JCToolKit: 4da8837e226fe06ca586ef6b19388fdaabb39157
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
