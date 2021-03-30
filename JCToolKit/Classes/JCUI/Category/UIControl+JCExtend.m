@@ -8,6 +8,7 @@
 
 #import "UIControl+JCExtend.h"
 #import "NSObject+JCExtend.h"
+#import <objc/runtime.h>
 
 @implementation UIControl (JCExtend)
 
