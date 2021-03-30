@@ -10,8 +10,6 @@
 #import "JCCacheResponedDispatcher.h"
 #import "JCToolKit_Core.h"
 
-#import <objc/runtime.h>
-
 @interface JCRequestProxy () {
     JCRequester *_requester;
 }

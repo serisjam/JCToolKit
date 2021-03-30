@@ -15,5 +15,6 @@
 #import "UIScrollView+JCParallaxHeader.h"
 
 #import "JCTagCollectionView.h"
+#import "JCNavigationController.h"
 
 #endif /* JCToolKit_UI_h */

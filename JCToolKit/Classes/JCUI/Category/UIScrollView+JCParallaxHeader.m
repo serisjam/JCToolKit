@@ -7,7 +7,7 @@
 //
 
 #import "UIScrollView+JCParallaxHeader.h"
-#import "JCToolKit_Core.h"
+#import "NSObject+JCExtend.h"
 
 NSString *const JCParallaxKeyPathContentOffset = @"contentOffset";
 NSString *const JCParallaxKeyPathContentInset = @"contentInset";

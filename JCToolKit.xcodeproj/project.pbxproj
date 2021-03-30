@@ -100,6 +100,13 @@
 		36BDC24A260C8AAA00C0EDDC /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */; platformFilter = ios; };
 		36BDC24C260C8AAA00C0EDDC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC246260C8AAA00C0EDDC /* AFNetworking.framework */; platformFilter = ios; };
 		36BDC24E260C8AAA00C0EDDC /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC247260C8AAA00C0EDDC /* YYCache.framework */; platformFilter = ios; };
+		36F66C8326130DCF003464DC /* JCNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F66C7B26130DCF003464DC /* JCNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36F66C8826130DCF003464DC /* JCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F66C8026130DCF003464DC /* JCNavigationController.m */; };
+		36F66C91261314A2003464DC /* JCWrapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F66C8F261314A2003464DC /* JCWrapViewController.h */; };
+		36F66C92261314A2003464DC /* JCWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F66C90261314A2003464DC /* JCWrapViewController.m */; };
+		36F66C96261314E4003464DC /* JCWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F66C94261314E4003464DC /* JCWrapNavigationController.m */; };
+		36F66C97261314E4003464DC /* JCWrapNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F66C95261314E4003464DC /* JCWrapNavigationController.h */; };
+		36F66CCC2613222E003464DC /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F66CCB2613222E003464DC /* Image.xcassets */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +231,13 @@
 		36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/Static/SAMKeychain.framework; sourceTree = "<group>"; };
 		36BDC246260C8AAA00C0EDDC /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/Static/AFNetworking.framework; sourceTree = "<group>"; };
 		36BDC247260C8AAA00C0EDDC /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYCache.framework; path = Carthage/Build/iOS/Static/YYCache.framework; sourceTree = "<group>"; };
+		36F66C7B26130DCF003464DC /* JCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNavigationController.h; sourceTree = "<group>"; };
+		36F66C8026130DCF003464DC /* JCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNavigationController.m; sourceTree = "<group>"; };
+		36F66C8F261314A2003464DC /* JCWrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWrapViewController.h; sourceTree = "<group>"; };
+		36F66C90261314A2003464DC /* JCWrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCWrapViewController.m; sourceTree = "<group>"; };
+		36F66C94261314E4003464DC /* JCWrapNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCWrapNavigationController.m; sourceTree = "<group>"; };
+		36F66C95261314E4003464DC /* JCWrapNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWrapNavigationController.h; sourceTree = "<group>"; };
+		36F66CCB2613222E003464DC /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Image.xcassets; path = JCToolKit/Assets/Image.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +333,7 @@
 				36546FEA23BF2B3A00794F84 /* JCNetwork */,
 				3654701B23BF2B3A00794F84 /* JCRouter */,
 				3654700923BF2B3A00794F84 /* JCUI */,
+				36F66CCB2613222E003464DC /* Image.xcassets */,
 				36546FCF23BF25F300794F84 /* Info.plist */,
 				36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */,
 			);
@@ -425,6 +440,7 @@
 				3654701A23BF2B3A00794F84 /* JCToolKit_UI.h */,
 				3654700A23BF2B3A00794F84 /* Category */,
 				3654701323BF2B3A00794F84 /* JCTagCollectionView */,
+				36F66C7926130DCF003464DC /* JCNavigationController */,
 			);
 			name = JCUI;
 			path = JCToolKit/Classes/JCUI;
@@ -513,6 +529,19 @@
 			path = ExtendClasses;
 			sourceTree = "<group>";
 		};
+		36F66C7926130DCF003464DC /* JCNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				36F66C7B26130DCF003464DC /* JCNavigationController.h */,
+				36F66C8026130DCF003464DC /* JCNavigationController.m */,
+				36F66C95261314E4003464DC /* JCWrapNavigationController.h */,
+				36F66C94261314E4003464DC /* JCWrapNavigationController.m */,
+				36F66C8F261314A2003464DC /* JCWrapViewController.h */,
+				36F66C90261314A2003464DC /* JCWrapViewController.m */,
+			);
+			path = JCNavigationController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -521,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36030DD72611CC7100FEBA97 /* ViewController+MASAdditions.h in Headers */,
+				36F66C97261314E4003464DC /* JCWrapNavigationController.h in Headers */,
 				3654705C23BF2B3A00794F84 /* JCTagCollectionViewCell.h in Headers */,
 				3654706923BF2B3A00794F84 /* NSData+JCExtend.h in Headers */,
 				3654703923BF2B3A00794F84 /* JCRequest.h in Headers */,
@@ -534,6 +564,7 @@
 				3654706323BF2B3A00794F84 /* JCToolKit_Core.h in Headers */,
 				3654704523BF2B3A00794F84 /* DispatchElement.h in Headers */,
 				3654707123BF2B3A00794F84 /* NSObject+JCAOP.h in Headers */,
+				36F66C8326130DCF003464DC /* JCNavigationController.h in Headers */,
 				3654706D23BF2B3A00794F84 /* NSArray+JCExtend.h in Headers */,
 				3654706823BF2B3A00794F84 /* NSString+JCExtend.h in Headers */,
 				3654706623BF2B3A00794F84 /* NSTimer+JCExtend.h in Headers */,
@@ -558,6 +589,7 @@
 				36030DCD2611CC7100FEBA97 /* MASLayoutConstraint.h in Headers */,
 				3654704823BF2B3A00794F84 /* JCToolKit_Network.h in Headers */,
 				3654704623BF2B3A00794F84 /* JCDispatcher.h in Headers */,
+				36F66C91261314A2003464DC /* JCWrapViewController.h in Headers */,
 				3654704423BF2B3A00794F84 /* JCCacheResponedDispatcher.h in Headers */,
 				3654704D23BF2B3A00794F84 /* JCDefine.h in Headers */,
 				36030D8B2611C57A00FEBA97 /* JCToolKit.h in Headers */,
@@ -663,6 +695,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F66CCC2613222E003464DC /* Image.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,8 +730,11 @@
 				3654707423BF2B3A00794F84 /* NSObject+JCAOP.m in Sources */,
 				3654704223BF2B3A00794F84 /* JCDispatcher.m in Sources */,
 				3654705723BF2B3A00794F84 /* JCTagCollectionViewCell.m in Sources */,
+				36F66C8826130DCF003464DC /* JCNavigationController.m in Sources */,
 				3654704F23BF2B3A00794F84 /* UIScrollView+JCParallaxHeader.m in Sources */,
+				36F66C92261314A2003464DC /* JCWrapViewController.m in Sources */,
 				3654703A23BF2B3A00794F84 /* JCResponedObj.m in Sources */,
+				36F66C96261314E4003464DC /* JCWrapNavigationController.m in Sources */,
 				3654703723BF2B3A00794F84 /* JCRequestObj.m in Sources */,
 				3654704023BF2B3A00794F84 /* JCCacheResponedDispatcher.m in Sources */,
 				3654706F23BF2B3A00794F84 /* NSString+JCExtend.m in Sources */,
