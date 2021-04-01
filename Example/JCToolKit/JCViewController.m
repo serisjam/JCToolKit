@@ -15,7 +15,7 @@
 
 @interface JCViewController ()
 
-@property (nonatomic, strong) NSString *target;
+@property (weak, nonatomic) IBOutlet UITextView *requestTextView;
 
 @end
 
@@ -45,9 +45,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
-    [self testForMasonry];
-    [self testForTagView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -57,56 +54,27 @@
 	NSLog(@"viewwillappear");
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)didReceiveMemoryWarning
 {
-    [super viewDidAppear:animated];
-
-    [self jcNetworkRequest];
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-- (void)jcNetworkRequest
-{
+- (IBAction)onClickRequestNetwork:(id)sender {
+
     JCRequestObj *requestObj = [[JCRequestObj alloc] init];
     requestObj.hostName = @"https://httpbin.org";
     requestObj.path = @"get";
     requestObj.paramsDic = @{@"text":@"content type ios"};
 
+    jc_weakSelf;
+
     [[JCRequestProxy sharedInstance] httpGetWithRequest:requestObj entityClass:nil withCompleteBlock:^(JCNetworkResponse *response) {
         if (response.status == JCNetworkResponseStatusSuccess) {
             NSLog(@"%@", response.content);
+            [selfWeak.requestTextView setText:[NSString stringWithFormat:@"%@", response.content]];
         }
     }];
-}
-
-- (void)testForTagView
-{
-    JCTagCollectionView *tagView = [[JCTagCollectionView alloc] initWithFrame:CGRectMake(0, 120, 320, 80)];
-    [tagView setBackgroundColor:[UIColor cyanColor]];
-    tagView.tags = @[@"标签1", @"标签2", @"苏州", @"乌鲁木齐市", @"美国加利福利亚州"];
-
-    [self.view addSubview:tagView];
-}
-
-- (void)testForMasonry
-{
-    UIView *superview = self.view;
-
-    UIView *view1 = [[UIView alloc] init];
-    view1.translatesAutoresizingMaskIntoConstraints = NO;
-    view1.backgroundColor = [UIColor greenColor];
-    [superview addSubview:view1];
-
-    UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
-
-    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(superview).with.insets(padding);
-    }];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

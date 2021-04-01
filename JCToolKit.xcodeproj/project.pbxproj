@@ -95,6 +95,9 @@
 		3654707323BF2B3A00794F84 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 3654703423BF2B3A00794F84 /* CTBlockDescription.h */; };
 		3654707423BF2B3A00794F84 /* NSObject+JCAOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */; };
 		3654707523BF2B3A00794F84 /* JCDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3654703623BF2B3A00794F84 /* JCDeviceInfo.m */; };
+		368CEC632615A1EC00F385D7 /* JCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368CEC622615A1EC00F385D7 /* JCTableViewController.m */; };
+		368CEC712615A55700F385D7 /* JCMasExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368CEC702615A55700F385D7 /* JCMasExampleTableViewController.m */; };
+		368CEC772615BCC800F385D7 /* JCTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368CEC762615BCC800F385D7 /* JCTagViewController.m */; };
 		36B2204D260C1EC400A900DF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B2204C260C1EC400A900DF /* CoreServices.framework */; platformFilter = ios; };
 		36BDC248260C8AAA00C0EDDC /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC244260C8AAA00C0EDDC /* YYModel.framework */; platformFilter = ios; };
 		36BDC24A260C8AAA00C0EDDC /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */; platformFilter = ios; };
@@ -226,6 +229,12 @@
 		3654703423BF2B3A00794F84 /* CTBlockDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
 		3654703523BF2B3A00794F84 /* NSObject+JCAOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JCAOP.m"; sourceTree = "<group>"; };
 		3654703623BF2B3A00794F84 /* JCDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDeviceInfo.m; sourceTree = "<group>"; };
+		368CEC612615A1EC00F385D7 /* JCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCTableViewController.h; path = Example/JCToolKit/JCTableViewController.h; sourceTree = SOURCE_ROOT; };
+		368CEC622615A1EC00F385D7 /* JCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCTableViewController.m; path = Example/JCToolKit/JCTableViewController.m; sourceTree = SOURCE_ROOT; };
+		368CEC6F2615A55700F385D7 /* JCMasExampleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCMasExampleTableViewController.h; path = Example/JCToolKit/JCMasExampleTableViewController.h; sourceTree = SOURCE_ROOT; };
+		368CEC702615A55700F385D7 /* JCMasExampleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCMasExampleTableViewController.m; path = Example/JCToolKit/JCMasExampleTableViewController.m; sourceTree = SOURCE_ROOT; };
+		368CEC752615BCC800F385D7 /* JCTagViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JCTagViewController.h; path = Example/JCToolKit/JCTagViewController.h; sourceTree = SOURCE_ROOT; };
+		368CEC762615BCC800F385D7 /* JCTagViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JCTagViewController.m; path = Example/JCToolKit/JCTagViewController.m; sourceTree = SOURCE_ROOT; };
 		36B2204C260C1EC400A900DF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		36BDC244260C8AAA00C0EDDC /* YYModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYModel.framework; path = Carthage/Build/iOS/Static/YYModel.framework; sourceTree = "<group>"; };
 		36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/iOS/Static/SAMKeychain.framework; sourceTree = "<group>"; };
@@ -273,6 +282,12 @@
 				36030BF8261173FE00FEBA97 /* JCAppDelegate.m */,
 				36030BF9261173FE00FEBA97 /* JCViewController.h */,
 				36030BFB261173FF00FEBA97 /* JCViewController.m */,
+				368CEC612615A1EC00F385D7 /* JCTableViewController.h */,
+				368CEC622615A1EC00F385D7 /* JCTableViewController.m */,
+				368CEC6F2615A55700F385D7 /* JCMasExampleTableViewController.h */,
+				368CEC702615A55700F385D7 /* JCMasExampleTableViewController.m */,
+				368CEC752615BCC800F385D7 /* JCTagViewController.h */,
+				368CEC762615BCC800F385D7 /* JCTagViewController.m */,
 				36030C11261175D100FEBA97 /* Main.storyboard */,
 				36030BE32611737100FEBA97 /* Images.xcassets */,
 				36030C15261175D900FEBA97 /* LaunchScreen.storyboard */,
@@ -708,7 +723,10 @@
 			files = (
 				36030BFD261173FF00FEBA97 /* JCViewController.m in Sources */,
 				36030C032611741000FEBA97 /* main.m in Sources */,
+				368CEC772615BCC800F385D7 /* JCTagViewController.m in Sources */,
+				368CEC632615A1EC00F385D7 /* JCTableViewController.m in Sources */,
 				36030BFC261173FF00FEBA97 /* JCAppDelegate.m in Sources */,
+				368CEC712615A55700F385D7 /* JCMasExampleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,7 +787,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.1;
+				CURRENT_PROJECT_VERSION = 1.1.2;
 				DEVELOPMENT_TEAM = 7TVSQH639C;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "JCToolKit Example/Info.plist";
@@ -778,7 +796,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -793,7 +811,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.1;
+				CURRENT_PROJECT_VERSION = 1.1.2;
 				DEVELOPMENT_TEAM = 7TVSQH639C;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "JCToolKit Example/Info.plist";
@@ -802,7 +820,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -930,7 +948,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.1;
+				CURRENT_PROJECT_VERSION = 1.1.2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -948,7 +966,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-iOS";
 				PRODUCT_NAME = JCToolKit;
@@ -961,7 +979,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.1;
+				CURRENT_PROJECT_VERSION = 1.1.2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -979,7 +997,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "serisjam.JCToolKit-iOS";
 				PRODUCT_NAME = JCToolKit;
