@@ -31,6 +31,8 @@
 		36030DD62611CC7100FEBA97 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 36030DC82611CC7100FEBA97 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36030DD72611CC7100FEBA97 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 36030DC92611CC7100FEBA97 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36030DDB2611CD6C00FEBA97 /* JCToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FCC23BF25F300794F84 /* JCToolKit.framework */; };
+		362BA836261FF9B1007DEEF6 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362BA835261FF9B1007DEEF6 /* MBProgressHUD.framework */; platformFilter = ios; };
+		362BA83B261FFA0F007DEEF6 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 362BA83A261FFA0F007DEEF6 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36546FD923BF278B00794F84 /* UIKit.framework */; platformFilter = ios; };
 		36546FE923BF2B2900794F84 /* JCToolKit-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 36546FE823BF2B2900794F84 /* JCToolKit-prefix.pch */; };
 		3654703723BF2B3A00794F84 /* JCRequestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 36546FEC23BF2B3A00794F84 /* JCRequestObj.m */; };
@@ -163,6 +165,8 @@
 		36030DC72611CC7100FEBA97 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Carthage/Build/iOS/Static/Masonry.framework/Headers/NSArray+MASShorthandAdditions.h"; sourceTree = SOURCE_ROOT; };
 		36030DC82611CC7100FEBA97 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Carthage/Build/iOS/Static/Masonry.framework/Headers/Masonry.h; sourceTree = SOURCE_ROOT; };
 		36030DC92611CC7100FEBA97 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Carthage/Build/iOS/Static/Masonry.framework/Headers/ViewController+MASAdditions.h"; sourceTree = SOURCE_ROOT; };
+		362BA835261FF9B1007DEEF6 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/Static/MBProgressHUD.framework; sourceTree = "<group>"; };
+		362BA83A261FFA0F007DEEF6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Carthage/Build/iOS/Static/MBProgressHUD.framework/Headers/MBProgressHUD.h; sourceTree = SOURCE_ROOT; };
 		36546FCC23BF25F300794F84 /* JCToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36546FCF23BF25F300794F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36546FD923BF278B00794F84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -262,6 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362BA836261FF9B1007DEEF6 /* MBProgressHUD.framework in Frameworks */,
 				36030BCD261172BC00FEBA97 /* Masonry.framework in Frameworks */,
 				36546FDA23BF278C00794F84 /* UIKit.framework in Frameworks */,
 				36BDC24C260C8AAA00C0EDDC /* AFNetworking.framework in Frameworks */,
@@ -318,6 +323,14 @@
 			name = Masonry;
 			sourceTree = "<group>";
 		};
+		362BA839261FF9C7007DEEF6 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				362BA83A261FFA0F007DEEF6 /* MBProgressHUD.h */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		36546FB223BF25D600794F84 = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				36030D8A2611C57A00FEBA97 /* JCToolKit.h */,
+				362BA839261FF9C7007DEEF6 /* MBProgressHUD */,
 				36030DBB2611CC5500FEBA97 /* Masonry */,
 				3654700623BF2B3A00794F84 /* JCDefine */,
 				3654702123BF2B3A00794F84 /* JCCore */,
@@ -358,6 +372,7 @@
 		36546FD423BF276100794F84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				362BA835261FF9B1007DEEF6 /* MBProgressHUD.framework */,
 				36030BCC261172BC00FEBA97 /* Masonry.framework */,
 				36BDC246260C8AAA00C0EDDC /* AFNetworking.framework */,
 				36BDC245260C8AAA00C0EDDC /* SAMKeychain.framework */,
@@ -566,6 +581,7 @@
 			files = (
 				36030DD72611CC7100FEBA97 /* ViewController+MASAdditions.h in Headers */,
 				36F66C97261314E4003464DC /* JCWrapNavigationController.h in Headers */,
+				362BA83B261FFA0F007DEEF6 /* MBProgressHUD.h in Headers */,
 				3654705C23BF2B3A00794F84 /* JCTagCollectionViewCell.h in Headers */,
 				3654706923BF2B3A00794F84 /* NSData+JCExtend.h in Headers */,
 				3654703923BF2B3A00794F84 /* JCRequest.h in Headers */,
@@ -789,7 +805,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1.2;
 				DEVELOPMENT_TEAM = 7TVSQH639C;
-				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "JCToolKit Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -813,7 +828,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1.2;
 				DEVELOPMENT_TEAM = 7TVSQH639C;
-				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "JCToolKit Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
