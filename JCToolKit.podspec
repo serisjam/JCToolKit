@@ -38,6 +38,8 @@ Pod::Spec.new do |s|
   s.subspec 'JCDefine' do |ss|
     ss.source_files = 'JCToolKit/Classes/JCDefine/*'
     ss.public_header_files = 'JCToolKit/Classes/JCDefine/*.h'
+
+    ss.dependency 'CocoaLumberjack'
   end
 
   s.subspec 'JCCore' do |ss|
