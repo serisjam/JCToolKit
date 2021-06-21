@@ -17,6 +17,12 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #endif
 
+#if __has_include(<MBProgressHUD/MBProgressHUD.h>)
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#endif
+
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
 @interface JCViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextView *requestTextView;
@@ -55,6 +61,13 @@
 
 + (void)load
 {
+    [DDLog addLogger:[DDOSLogger sharedInstance]]; // Uses os_log
+
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:fileLogger];
+
 	[JCViewController jc_hookSelector:@selector(viewWillAppear:) withExcuteOption:JCAOPExecuteOptionBefore usingBlock:^(JCAOPInfo *aopInfo) {
 		NSLog(@"Befor View Controller %@ arguments: %@", aopInfo.instance, aopInfo.arguments);
 	}];
@@ -77,6 +90,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    DDLogVerbose(@"test ddlogverbose");
 }
 
 - (void)viewWillAppear:(BOOL)animated

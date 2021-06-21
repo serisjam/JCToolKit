@@ -24,6 +24,7 @@ FOUNDATION_EXPORT const unsigned char JCToolKitVersionString[];
 #import <JCToolKit/JCMediatorProtocol.h>
 #import <JCToolKit/Masonry.h>
 #import <JCToolKit/MBProgressHUD.h>
+#import <JCToolKit/CocoaLumberjack.h>
 
 #else
 
@@ -35,5 +36,6 @@ FOUNDATION_EXPORT const unsigned char JCToolKitVersionString[];
 #import "JCMediatorProtocol.h"
 #import "Masonry.h"
 #import "MBProgressHUD.h"
+#import "CocoaLumberjack.h"
 
 #endif /* JCToolKit_h */

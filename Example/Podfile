@@ -4,6 +4,7 @@ target 'JCToolKit_Example' do
 
   use_frameworks! :linkage => :static
   pod 'JCToolKit', :path => '../'
+  pod 'CocoaLumberjack'
 
   target 'JCToolKit_Tests' do
     inherit! :search_paths
